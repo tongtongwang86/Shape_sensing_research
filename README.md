@@ -4,10 +4,10 @@ This project implements a model-based proprioception system for soft robots usin
 
 ## Initial "Simulation" Results
 
-![Shape Reconstruction 1](rod_sim/results/bendy1.png)
+![Shape Reconstruction 1](misc/bendy1.png)
 
-![Shape Reconstruction 2](rod_sim/results/bendy2.png)
+![Shape Reconstruction 2](misc/bendy2.png)
 
 ## PCB Design
 
-![Sensor PCB](pcb/current-screenshots/feb-10-2026-version1.png)
+![Sensor PCB](misc/feb-10-2026-version1.png)
