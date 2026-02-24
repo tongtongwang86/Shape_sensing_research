@@ -1695,6 +1695,16 @@
 		)
 		(uuid "22392e31-4e94-483c-803a-f687dd525a3d")
 	)
+	(label "B2"
+		(at 104.775 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2af5d796-1ee3-4272-8a25-1081ca863ffa")
+	)
 	(label "SDA"
 		(at 141.605 149.86 0)
 		(effects
@@ -1715,6 +1725,16 @@
 		)
 		(uuid "4bec199b-4580-49ba-8094-e9c8abc9ecba")
 	)
+	(label "B1"
+		(at 104.775 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "539a8a3f-ec30-44bc-947a-8928cd52728b")
+	)
 	(label "B2"
 		(at 106.045 104.14 180)
 		(effects
@@ -1725,6 +1745,26 @@
 		)
 		(uuid "5abe9cc5-1cd2-4991-825f-ae031cbe05f5")
 	)
+	(label "A1"
+		(at 104.775 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63dc3be5-1368-4590-b853-65ed596cf5a3")
+	)
+	(label "C1"
+		(at 141.605 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "70edbe28-cb96-4226-91d8-339d9f370c60")
+	)
 	(label "A2"
 		(at 51.435 104.14 180)
 		(effects
@@ -1734,6 +1774,16 @@
 			(justify right bottom)
 		)
 		(uuid "8f27b248-cd73-479b-b43a-f73f4de7ae06")
+	)
+	(label "A2"
+		(at 104.775 157.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "90861de6-8df1-4263-b98e-647d214a82d2")
 	)
 	(label "C1"
 		(at 144.78 104.14 180)
@@ -1764,6 +1814,16 @@
 			(justify left bottom)
 		)
 		(uuid "d6e69221-adb5-4cd5-870a-2e6f99dd61ae")
+	)
+	(label "C2"
+		(at 104.775 165.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e94111ae-39d2-4ab6-9e95-6a142874d0af")
 	)
 	(global_label "VDD"
 		(shape input)
