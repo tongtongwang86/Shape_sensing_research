@@ -1,0 +1,346 @@
+Page 1
+<img>Check for updates</img>
+
+SOFT ROBOTICS Volume 12, Number 4, 2025 Mary Ann Liebert, Inc. DOI: 10.1089/soro.2024.0017
+
+<img>SORO Soft Robotics</img>
+
+ORIGINAL ARTICLE
+
+Advancing Soft Robot Proprioception Through 6D Strain Sensors Embedding
+Daniel Feliu-Talegon,¹,† Yusuf Abdullahi Adamu,¹,‡ Anup Teejo Mathew,¹,² Abdulaziz Y. Alkayas,¹ and Federico Renda¹,²
+
+Abstract
+
+Soft robots and bioinspired systems have revolutionized robot design by incorporating flexibility and deformable materials inspired by nature’s ingenious designs. Similar to many robotic applications, sensing and perception are paramount to enable soft robots to adeptly navigate the unpredictable real world, ensuring safe interactions with both humans and the environment. Despite recent progress, soft robot sensorization still faces significant challenges due to the virtual infinite degrees of freedom of the system and the need for efficient computational models capable of estimating valuable information from sensor data. In this article, we present a new model-based proprioceptive system for slender soft robots based on strain sensing and a strain-based modeling approach called Geometric Variable-Strain (GVS). We develop a flexible 2-Plate 6D strain sensor (Flex-2P6D) capable of measuring the 6 dimensions (6D) strain at specific points of the soft robot with an accuracy higher than 95%. Coupled with the GVS approach, the proposed methodology is able to directly measure the configuration variables and reconstruct complex robot shapes with very high accuracy, even in very challenging conditions. The sensors are embedded inside the soft body, which makes them also suitable for underwater operation and physical interaction with the environment. Something that we also demonstrate experimentally. We believe that our approach has the potential to be applied across a wide variety of applications, including observation and exploration missions, as well as human–robot interaction, where the states of the system are required for implementing precise closed-loop control and estimation methods.
+
+Keywords: soft robot proprioception, capacitive sensing, 6D strain sensor, shape reconstruction, embedded sensors
+
+Introduction
+
+The observation of creatures in nature has been a pro- found source of inspiration for numerous researchers, leading to the development of bioinspired designs. Animals, in particular, exploit their body compliance to navigate complex environments, enabling them to accomplish tasks more efficiently. Soft robotics takes the cue from this
+
+¹Department of Mechanical and Nuclear Engineering, Khalifa University of Science and Technology, Abu Dhabi, United Arab Emirates. ²Khalifa University Center for Autonomous Robotic Systems (KUCARS), Khalifa University of Science and Technology, Abu Dhabi, United Arab Emirates. †These two authors contribute equally to this work.
+
+© The Author(s) 2025. Published by Mary Ann Liebert, Inc. This Open Access article is distributed under the terms of the Creative Commons License [CC-BY] (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+
+<page_number>465</page_number>
+
+Page 2
+<page_number>466</page_number> FELIU-TALEGON ET AL.
+
+research and stands as a growing field, aiming to mimic the physical characteristics of living organisms,¹ including physical compliance, and seamless interaction with the environment. The importance and functionality of soft robots have recently driven new advances in modeling, actuator design, and the development of control and sensory systems for this new generation of robots.²,³ However, the development of proprioception systems to accurately estimate the state of a soft robot is still a challenging task and requires the development of new technologies and paradigms that can push the boundaries of soft robots’ abilities. Sensory systems enable animals to perceive and respond to stimuli, providing crucial information for various essential functions. Similarly, soft robots require sensory systems to navigate unpredictable environments and perform complex tasks in a more human-like or animal-like manner.⁴
+
+Soft robot sensorization requires unconventional approaches to detect the robot’s large deformations without introducing rigid components into the system.⁵⁻⁷ Soft robots are highly susceptible to deformation from external forces or internal actuation, resulting in complex and extensive deformations characterized by nonlinearities, hysteresis, and viscoelastic effects, among other factors. This highlights the crucial need for new technologies capable of detecting complex shapes with localized deformations. Earlier research has presented innovative methods to measure the configuration of soft robots maintaining a constant strain or curvature along the robot’s length, restricting the potential to attain complex shape results.⁸⁻¹² While these methods prove to be reliable, they encounter difficulties in accurately reconstructing complex shapes that involve variable deformations along the robot length. The highly deformable nature of soft robots, combined with their inherent infinite degrees of freedom, presents a challenge in accurately reconstructing their 3D morphology solely based on a limited set of measurements.
+
+In response to the essential need to capture variable strain along the robot structure, and to enable practical applications of soft robots in real-world scenarios, recent studies have been making notable advancements in the development of soft proprioception systems with an expanded set of sensors. In this direction, recent research has successfully implemented multiple sensors across various sections of the robots combined with machine learning algorithms to capture more intricate shapes.¹³,¹⁴ Although these strategies have demonstrated excellent results, they require the segmentation of the soft robot into a number of elements and assume constant strain along these individual elements. Additional methods involve employing a stretch-receptive sensor network¹⁵ inside the soft robot to reconstruct the full deformation of the robot by measuring the elongation of the sensors or the introduction of stretchable shape-sensing sheets that provide orientation and strain measurements from sensor arrays.¹⁶
+
+The current trend in soft robots estimation explores the emerging confluence of developing biologically inspired stretchable electronic skin (e-skin) and machine learning algorithms to process the sensed data.⁸,¹³,¹⁷⁻²⁰ Despite these recent advances, there remain several challenges yet to be addressed in the field of soft robots estimation. Particularly, the methods based on machine learning face a significant limitation arising from the uncertainty regarding how these algorithms will adjust or adapt to shapes that were not included in their training dataset. Regarding skin sensors, numerous challenges persist, including the enhancement of shape-sensing skins’ stretchability, improving sensor resolution for detecting small curvatures and optimizing their performance amid continuous surface contact or external factors such as temperature or humidity. Furthermore, extracting valuable information from the large quantity of data provided by e-skin sensors requires algorithms that maintain computational efficiency for real-time implementation, especially for control system implementation.²¹,²²
+
+<img>FIG. 1. The six strains corresponding to ε ∈ ℝ⁶. Each strain is linked with either a pure translation or rotation along one of the three local axes within the reference frame of the robot.</img>
+
+Page 3
+SOFT ROBOT PROPRIOCEPTION USING 6D STRAIN SENSORS <page_number>467</page_number>
+
+<img>Figure 2. Overview of the proposed methodology for soft robot shapes reconstruction with embedded Flex-2P6D. (A) Rendered view of a soft robot with embedded Flex-2P6D and actuation. (B) Development of bioinspired prototypes. (C) Steps of the proposed proprioception method for soft robots. Flex-2P6D, flexible 2-Plate 6D strain sensor.</img>
+
+FIG. 2. Overview of the proposed methodology for soft robot shapes reconstruction with embedded Flex-2P6D. (A) Rendered view of a soft robot with embedded Flex-2P6D and actuation. (B) Development of bioinspired prototypes. (C) Steps of the proposed proprioception method for soft robots. Flex-2P6D, flexible 2-Plate 6D strain sensor.
+
+A rising trend in soft robotics involves utilizing the strain field to represent the robot’s configuration, encompassing curvature, twist, elongation, and shear. Visualizations of the six strains, ε ∈ ℝ⁶, are provided in Figure 1.
+
+In this article, we propose a model-based proprioception system designed for soft robots. Our proposed system involves embedding 6 dimension (6D) strain sensors along the robot’s body and utilizes a model-based methodology that correlates the measured strain with the 3D morphology of the system (see Fig. 2). This approach builds upon the recent Geometric Variable-Strain (GVS) model,²³⁻²⁵ which describes the soft manipulator configuration using a finite set of strain bases. We propose “finite element method (FEM)-like” local strain bases where the 3D geometry can be reconstructed with the measurements of our sensors acting as the generalized coordinates of the system. This approach resembles the FEM; however, it utilizes the values of strain at element nodes. By strategically positioning the sensors at various sections of the robot, our method enables the detection of geometric variations across the entire soft body. The sensor configuration consists of two closely positioned plates embedded in the soft body. By measuring the relative displacement and rotation between these plates, we can compute the 6D strain of the system at that specific point. We
+
+TABLE 1. STATE OF THE ART ON SENSING DIFFERENT TYPES OF DEFORMATION, ALONG WITH THEIR RESPECTIVE SENSING MECHANISM
+Type of sensing deformation	Sensing mechanism
+Bending one axis	Fiber optic sensors
+Bending two axis	Liquid metals sensors
+Twisting	Fiber optic sensors
+Twisting and bending	Hydrogel
+Stretching, bending, localized pressing	Fiber-optic sensors
+Bending one axis	Graphene woven mesh
+Bending one axis	Magnetic sensors
+Twisting and bending	Fiber Bragg grating
+Stretching and bending	Magnetic sensors
+Bending one axis	Electro-optical and resistive strain
+Bending one axis	Position and pressure sensors
+Stretching, bending, local compression	Optical, piezoresistive, microfluidic
+Twisting, stretching, bending, shear	Capacitive sensor
+Page 4
+<page_number>468</page_number> FELIU-TALEGON ET AL.
+
+refer to this as flexible 2-Plate 6D strain sensor or Flex-2P6D. While previous works in soft robot proprioception primarily focused on measuring bending, twisting, and stretching, for example, in studies⁹⁻¹¹,¹⁴,²⁰,²⁶⁻³³, our sensor distinguishes itself by its ability to measure the complete 6D strain, marking a distinctive and innovative feature within this particular field (see Table 1).
+
+Another significant difference from previous methodologies, such as in studies¹³⁻¹⁶,¹⁸,¹⁹,³⁴, is that our approach directly measures the generalized coordinates of the system that define the system’s state without requiring additional complex mapping. We believe that this distinctive feature positions our approach as an innovative method for soft robot sensorization, potentially influencing various other fields related to soft robotics. The strains and their numerical differentiation can serve as the states of the system to be utilized for closed-loop control schemes, dynamic observers, and other estimation methods, especially in real-time applications. Our system efficiently integrates embedded sensors and internal actuation in a compact manner, as illustrated in Figure 2A, offering numerous advantages. Embedding sensors within soft robots provides significant advantages as they are shielded from external elements, ensuring increased durability and reliability, particularly in contact with surfaces or submerged in water.¹⁴,¹⁵,³⁴⁻³⁶
+
+The efficacy of the proposed system (Flex-2P6D) is validated in different prototypes resulting in the first model-based soft robot proprioception systems capable of measuring local 6D strains. The approach is also validated in scenarios involving physical interaction with underwater environments, demonstrating its potential for exploration in underwater applications.
+
+Methods
+
+Design of Flex-2P6D
+
+Capacitive sensing has gained significant attention among sensor designers thanks to its minimal power consumption, fast response, and easy manufacturing. The design of our Flex-2P6D is inspired by the sensing strategy proposed in ref³⁷, which was originally developed to measure forces and torques in the fingertip of a robot hand. Flex-2P6D consists of two closely positioned plates and employs capacitance sensing mechanisms to detect position and orientation changes between two plates (see Fig. 3A). By measuring the relative displacement and rotation between these plates, we
+
+<img>FIG. 3. Design of Flex-2P6D for 3D shape reconstruction of soft robots. (A) Exploded view of Flex-2P6D, highlighting the two plates responsible for measuring the strain of the robot at the specific points they are positioned. Additionally, a front-view photo of the Flex-2P6D assembly is provided. (B) Definition of the sensor geometric parameters. (C) Integration of Flex-2P6D inside the soft body, which involves accurately placing the sensors within the soft robot. This is achieved by inserting multiple needles through small holes in the molds at the intended locations.</img>
+
+Page 5
+SOFT ROBOT PROPRIOCEPTION USING 6D STRAIN SENSORS <page_number>469</page_number>
+
+can compute the 6D strain of the system at this specific point. One of the plates contains six embedded sensing cells to measure the 6D strain, while the other plate contains three pins and serves as the ground component. The movement of these pins within the cells generates responses in the sensing cells, enabling the measurement of deformation. The space between the two plates is filled with a thin layer of the same silicone as the soft body, acting as a dielectric. Then, six capacitors are formed between the sensing cells and the pins on the ground plate, facilitating relative movement between the two plates. Each capacitor is formed by pairing one sensing cell with an adjacent section of the pin. The sensing cells serve as the conductive plates, while the pins act as the other conductive plate, and the silicone functions as the dielectric. Thus, the combination of two sensing cells and one pin results in two distinct capacitors. Both plates are designed with a custom shape that accommodates cable passage and internal actuation through the sensor’s section within the soft robot.
+
+We developed a mathematical model that, in conjunction with the sensing approach outlined in ref37, maps the six capacitances of the sensor to the 6D strain. Every sensing cell can be considered as a parallel connection of two capacitors: a normal capacitor between planar electrodes on the pin and the hole, and a lateral capacitor between the walls of the pin and the semicircular electrodes on the hole.37,38 The mathematical model facilitates the simulation of diverse deformations and allows for the computation of their respective capacitance responses. The combination of this model and an optimization process allows us to derive the most appropriate geometrical parameters for Flex-2P6D based on the specifications for the sensor’s dimensions and the desired range of strains in our application. Further details about the mathematical model, design process, and the final geometrical parameters of the sensor are presented in Supplementary Data S1.
+
+Fabrication of the sensor
+
+The proposed sensor, Flex-2P6D, can be easily developed by fabricating the two aforementioned plates individually and joining them together using the silicone layer. We fabricate the printed circuit board depicted in Supplementary Figure S4 that integrates the sensing cells, a CDC
+
+<img> A <img> A graph showing Capacitance (pF) vs Time (s). The x-axis ranges from 0 to 50 seconds. The y-axis ranges from -0.1 pF to 0.1 pF. There are six lines representing different capacitances:
+
+CR1 (cyan)
+CL1 (red)
+CR2 (green)
+CL2 (brown)
+CR3 (purple)
+CL3 (orange)
+B <img> Two subplots are shown:
+
+Top subplot:
+
+Title: Strain (rad/m)
+x-axis: Time (s), ranging from 0 to 50.
+y-axis: Strain (rad/m), ranging from -10 to 10.
+Three lines are plotted:
+ε1 (red)
+ε2 (blue)
+ε3 (green)
+Bottom subplot:
+
+Title: Strain (m/m)
+x-axis: Time (s), ranging from 0 to 50.
+y-axis: Strain (m/m), ranging from -0.2 to 0.2.
+Three lines are plotted:
+ε4 (red)
+ε5 (blue)
+ε6 (green)
+C <img> Three subplots are shown:
+
+Left subplot:
+
+Title: ε1 (rad/m)
+x-axis: Time (s), ranging from 0 to 30.
+y-axis: ε1 (rad/m), ranging from -10 to 10.
+Two lines are plotted:
+Sensor measurement (dashed red)
+Ground truth (solid blue)
+Middle subplot:
+
+Title: ε2 (rad/m)
+x-axis: Time (s), ranging from 0 to 30.
+y-axis: ε2 (rad/m), ranging from -10 to 10.
+Two lines are plotted:
+Sensor measurement (dashed red)
+Ground truth (solid blue)
+Right subplot:
+
+Title: ε3 (rad/m)
+x-axis: Time (s), ranging from 0 to 30.
+y-axis: ε3 (rad/m), ranging from -10 to 10.
+Two lines are plotted:
+Sensor measurement (dashed red)
+Ground truth (solid blue)
+Bottom row of subplots: Left subplot:
+
+Title: ε4 (m/m)
+x-axis: Time (s), ranging from 0 to 15.
+y-axis: ε4 (m/m), ranging from -0.1 to 0.1.
+Two lines are plotted:
+Sensor measurement (dashed red)
+Ground truth (solid blue)
+Middle subplot:
+
+Title: ε5 (m/m)
+x-axis: Time (s), ranging from 0 to 20.
+y-axis: ε5 (m/m), ranging from -0.2 to 0.2.
+Two lines are plotted:
+Sensor measurement (dashed red)
+Ground truth (solid blue)
+Right subplot:
+
+Title: ε6 (m/m)
+x-axis: Time (s), ranging from 0 to 15.
+y-axis: ε6 (m/m), ranging from -0.2 to 0.2.
+Two lines are plotted:
+Sensor measurement (dashed red)
+Ground truth (solid blue) </img>
+FIG. 4. Characterization of Flex-2P6D for 3D shape reconstruction of soft robots. (A) Capacitance readings (ΔC) during the calibration process. Each reading capacitance is defined as follows: ΔC = C – C*, where C is the current capacitance and C* is the capacitance without deformation. (B) Comparison between the ground truth strain measurements and the values obtained using obtained using Flex-2P6D. The solid lines represent the ground truth measurements, while the dotted lines depict the measurements recorded by the sensor. (C) Sensing evaluation of Flex-2P6D across the six distinct strains.</img>
+
+Page 6
+<page_number>470</page_number> FELIU-TALEGON ET AL.
+
+chip (AD7147, Analog Devices) responsible for capacitance readings, and the necessary connections for data transmission to the microcontroller. The sensing cells consist of three via holes designed with specific parameters. To create six individual sensing cells, a rectangular cut is made in the center of these vias. The bottom plate is made of aluminum due to its lightweight nature and excellent electrical conductivity. The silicone layer is manufactured using customized molds mimicking the same shape and dimensions of the plates, with the thickness determined through the optimization process. This layer is manufactured with the same material as the soft robot, ensuring it does not add unnecessary stiffness to the system. As a result, when the sensor is embedded, this layer seamlessly integrates with the soft material, allowing the two plates to float within the silicone structure, causing minimal influence on the stiffness of the robot. Finally, the 4 mm high sensor is precisely embedded in the soft robot at the location where strain measurements are required. Customized molds, shaped to match the final design of the manipulator, are fabricated for constructing the soft robot as illustrated in Figure 3C.
+
+Internal actuation
+
+Various soft actuation methods have been developed to effectively drive soft mechanisms. Cable-driven actuation stands as one of the prominent methods extensively utilized in the field of soft robotics. This particular actuation method surpasses others in its ability to minimize weight and improve the compactness of the mechanism, fully integrating it within the body. One of the proposed soft manipulators is equipped with three straight cables that extend from the base to the tip of the soft manipulator. The cables are phased 120 degrees apart to facilitate deformation in multiple directions. The cables are driven by servo motors connected to pulleys, generating pulling movements to actuate the system.
+
+Model-based reconstruction method
+
+The shape reconstruction method implemented in this work is based on the GVS method.25,39 In this approach, the soft links are represented by Cosserat rods that can bend, twist, stretch, and shear (6D). Then, the geometry of the robot along its length (rotation and translation) is parameterized by the field of strains. Thanks to that, knowing the strain basis function along the rod, the rod shape can be reconstructed. We divide the soft link into finite strain elements to discretize the continuous strain field into a finite set of FEM-like bases. Traditional FEM shape functions are conventionally utilized to describe the position field, whereas in our case, we employ them to model the strain field. The generalized coordinates’ values correspond to the strains’ values at every node, precisely aligning with what our sensors measure. Then, by positioning the sensors at various points along the soft robot, the complete shape can be reconstructed. This method is recapped and specialized for the needs of the present study in Supplementary Data S1. For more comprehensive details, readers may also refer to study40.
+
+Results
+
+Characterization of the sensor
+
+Calibration of the strains involves determining the relationship between the measured output of the sensor (capacitances) and the actual strain being applied. However, directly measuring the actual strain of the system is not feasible. Supplementary Figure S5 illustrates the setup utilized for calibration and evaluation purposes of Flex-2P6D. The soft body is clamped at its base, while the upper section is monitored using a camera system facilitated by the two 3D-printed parts, manufactured at both the base and the tip of the prototype. The transformation matrix that relates the two 3D-printed parts can be measured directly from the camera system. This matrix can be transformed into the resulting 6D strain, assuming constant strain along the body (note that this assumption will not be needed for reconstruction). The mathematical expressions to obtain the 6D strains from the data recorded with the camera system are explained in Supplementary Data S1. In this setup, forces and moments are applied to the upper part of the robot, producing deformation in the soft body, consequently altering the capacitance within the sensor’s six sensing cells. A linear least-squares method was employed to correlate the changes in capacitance with the 6D strain (see Supplementary Data S1). Similar calibration processes have been used in studies37,41.
+
+The changes in capacitances (ΔC) obtained in the calibration process are shown in Figure 4A, while the comparison between the ground truth strain measurements and the measured values are shown in Figure 4B. Finally, to assess the performance of the sensor characterization, a series of experiments were conducted, involving five repetitions of loading and unloading cycles in each deformation direction. Figure 4C shows the results of these tests, and Table 2 depicts the errors obtained for each strain. Those results demonstrate an accuracy higher than 95% for the six strains. For further details, refer to Supplementary Movie S1, which illustrates the aforementioned experiments.
+
+TABLE 2. RESULTS DERIVED FROM THE EVALUATION TESTS
+
+Individual tests	Range	Error	Error percentage (%)	Maximum error
+ε₁(rad/m)	[-15, 15]	0.26 ± 0.17	1.75 ± 1.15	0.83
+ε₂(rad/m)	[-12, 12]	0.35 ± 0.22	2.9 ± 1.8	1.00
+ε₃(rad/m)c	[-12, 12]	0.11 ± 0.43	3.6 ± 2.4	1.42
+ε₄(m/m)	[-0.1, 0.1]	0.004 ± 0.003	4 ± 3	0.0104
+ε₅(m/m)	[-0.25, 0.25]	0.011 ± 0.06	2.52 ± 4.24	0.0287
+ε₆(m/m)	[-0.2, 0.2]	0.007 ± 0.005	3.6 ± 2.4	0.0256
+These results are presented in the format of mean ± standard deviation. The error is normalized by the range value observed in the tests. These results indicate an overall accuracy exceeding 95%.
+
+Page 7
+SOFT ROBOT PROPRIOCEPTION USING 6D STRAIN SENSORS <page_number>471</page_number>
+
+Robot shape reconstruction using one sensor
+
+Accurately reconstructing the shape of a soft robot is extremely challenging due to the system’s infinite degrees of freedom. There exists a compromise between the required number of strain measurements and the complexity of the shapes necessary for reconstructing the shape. We first propose a 90 mm long soft robot equipped with a single sensor possessing a circular cross-section with a diameter of 32 mm. In this setup, the strains are taken at a single point. Thus, a constant strain basis is a natural choice. The prototype underwent manual deformation for 1 min, generating a diverse set of deformations. A representative set of 3D shape reconstructions using the proposed technique is displayed in Figure 5A and Supplementary Movie S2. We demonstrated the efficacy of this methodology, particularly in simple robot geometries where strains are consistently uniform along the length, and there are no localized forces applied at intermediate points of the body. The tip position and orientation of the system are tracked with a camera system and then compared with the estimated measurements obtained with the sensor system (see Fig. 5C). The results show an accuracy of $3.7 \pm 2.1$ mm and $0.06 \pm 0.042$ rad for position and orientation.
+
+A
+
+Undeformed	Twisting	Bending y	Shear y
+<img>Undeformed robot prototype</img>	<img>Twisting robot prototype</img>	<img>Bending Y robot prototype</img>	<img>Shear Y robot prototype</img>
+Twisting, bending y, bending z <img>Twisting, bending y, bending z robot prototype</img>
+
+B <img>Three-dimensional strain distribution and 6D strain measurements diagram for twisting, bending y, and bending z.</img>
+
+Elongation Compression
+
+C <img>Comparison of sensor-based 6D pose (flexibility) measurements vs. ground truth shown by θaβ along with error plots.</img>
+
+D <img>Orientational error (rad) Position error (m) plots over time for Flex-2P6D vs. ground truth.</img>
+
+FIG. 5. 3D shape reconstruction using a 90 mm long soft robot with one sensor. (A) Snapshots of the soft robot prototype alongside the 3D reconstruction showing distinct deformations. The colors in the 3D shape reconstructions indicate the longitudinal strain experienced on the manipulator’s surface. Red signifies elongation, while blue indicates compression. (B) 6D strain measurements over the whole experiment. The instants of the snapshots are indicated in the figure by dashed lines. (C) Position and orientation of the robot’s tip. The orientation is defined using ZYX Euler angles $(\alpha,\beta,\gamma)$. It presents a comparison between the estimated measurements obtained using Flex-2P6D and the measurements tracked by a camera system. (D) Position and orientation errors of the tip of the robot. The orientation error is calculated by employing the logarithm of the matrix transformation $\in \text{SO}(3)$ that relates the measured and estimated relative orientations. The analytical formula for this is provided in the Supplementary Methods.
+
+Page 8
+<page_number>472</page_number> FELIU-TALEGON ET AL.
+
+errors at the tip, respectively. The position and orientation errors at the tip over time are depicted in Figure 5D. This setup yields good results for specific cases; however, it cannot accurately estimate complex shapes that involve multiple localized deformations. A video demonstrating the real-time 3D shape reconstruction is also presented in Supplementary Movie S2.
+
+Robot shape reconstruction using multiple sensors
+
+To validate the performance of the sensing methodology on a more complex system, we designed a 165 mm long soft robot equipped with three sensors positioned at equally spaced intervals along the body. One sensor is placed at the base, another at one-third, and the last at two-thirds of the body’s length. We employed local FEM bases with two linear and one constant strain elements for the 3D reconstruction of the robot. Figure 6 represents the block diagram to reconstruct the 3D robot shape using the proposed bases. For additional details on the implementation of the GVS model using local FEM bases refer to study⁴².
+
+We conducted a total of five experiments to evaluate the efficiency of the proposed technique. The results of the 3D shape reconstruction are shown in Figure 7 and Supplementary Movies S3 and Movie S4. In the first three experiments, the system’s accuracy in reconstructing the position and orientation of the robot’s tip was assessed to validate the accuracy of the reconstruction process (see Supplementary Fig. S6 and Fig. 7C). The sensor system demonstrates exceptional predictive capabilities, accurately capturing highly complex deformations due to the varying strain along the robot. This capability allows the system to capture localized deformations effectively. Additionally, it exhibits a high sensitivity to minor deformations and effectively senses system vibrations.
+
+A second soft robot, similarly equipped with three sensors positioned identically, was designed, this time integrating internal actuation using three cable-driven actuators. An open-loop trajectory is defined, wherein the system executes a four-cycle rectangular trajectory. The results are depicted in Figure 8A and B. The quantitative tip position and orientation errors are illustrated in Supplementary Figure S7, displaying an accuracy of 4.3 ± 2.7 mm and 0.11 ± 0.075 rad, respectively. Additionally, the results of the 3D shape reconstruction are depicted in Supplementary Movie S5, revealing the consistency in estimation across the four cycles.
+
+Real-world underwater proprioception
+
+By emulating bioinspired systems, soft robots can navigate through tightly constrained environments.³,⁴³ The 3D geometry reconstruction of soft robots while interacting with the environment can help these systems to estimate contacts, properties of the environment, and external forces—essential elements for enhancing their autonomy. We show the 3D shape reconstruction of the robot operating underwater and interacting with the environment. Two underwater experiments were conducted, both following the same open-loop trajectory. In the first experiment, the system moves without interacting with the environment. In contrast, the second experiment involved placing various objects in the middle of the trajectory to facilitate interaction with them. The 3D reconstruction employing the proposed methodology is depicted in Figure 8C and D, and Supplementary Movie S6. The estimated robot tip trajectories in both experiments are depicted in Figure 8C alongside the cable length actuation input. There is a noticeable difference between the two experiments, making it highly intuitive to discern the locations of the objects. This demonstrates the capability of this approach to estimate certain environmental properties—a valuable asset, particularly in autonomous exploration tasks.
+
+Discussion
+
+We have developed a model-based proprioception system that is capable of reconstructing the complete 3D geometric deformations of soft robots in a generalizable manner. We strategically embedded strain sensors within various sections of the soft body to measure the generalized coordinates of the system without the need for additional mappings. These
+
+<img>FIG. 6. A block diagram depicting the process of 3D shape reconstruction for a soft robot utilizing three sensors and employing local FEM bases. The shape of the soft robot is reconstructed based on capacitance readouts from Flex-2P6D sensors, which are strategically positioned at various points throughout the robot. Subsequently, the capacitance readouts, denoted as ΔC ∈ R⁶, are converted into 6D strain at specific points ε ∈ R⁶, using the expression (22) from the Supplementary Material. The matrices involved in this expression are derived from the calibration of each sensor. The strain field along the robot’s length, ε(X), is then determined by considering the strain components, defined as εᵢ(X) = εᵢ(0)f₁ + εᵢ(L/3)f₂ + εᵢ(2L/3)f₃, where f₁, f₂, and f₃ represent the local strain bases as defined in equations (25a)–(25c) of Supplementary Material. Finally, the robot’s configuration is computed by recursively evaluating equation (29) from the Supplementary Material, assuming that the initial condition g(0) = g₀ is known, and that the exponential map is analytically computed using formulas (1) and (2) of the Supplementary Material, with (·) being the isomorphism from R⁶ to se(3). FEM, finite element method.</img>
+
+Page 9
+SOFT ROBOT PROPRIOCEPTION USING 6D STRAIN SENSORS <page_number>473</page_number>
+
+<img>A series of six images showing a soft robot being manipulated by a person's hand, with strain sensors visible on its body.</img>
+
+A
+
+<img>Three 3D plots (1-3) showing the strain distribution along the length of the soft robot. Plot 1 shows a straight cylinder. Plot 2 shows a curved shape. Plot 3 shows a more complex, wavy shape.</img> <img>Four 3D plots (4-6) showing the strain distribution along the length of the soft robot. Plot 4 shows a curved shape with a red arrow indicating a specific point. Plot 5 shows a straight cylinder. Plot 6 shows a curved shape.</img>
+
+B
+
+<img>A legend with six colored lines corresponding to the numbers 1-6.</img> <img>A 3D plot showing ε₁ (rad/m) vs X (m). The data points form a curve that starts at approximately 7 rad/m at X=0 m, decreases to about 5 rad/m at X=0.05 m, then increases slightly before decreasing again towards 0 rad/m at X=0.15 m.</img> <img>A 3D plot showing ε₂ (rad/m) vs X (m). The data points form a curve that starts at approximately -5 rad/m at X=0 m, decreases to about -8 rad/m at X=0.05 m, then increases slightly before decreasing again towards -5 rad/m at X=0.15 m.</img> <img>A 3D plot showing ε₃ (rad/m) vs X (m). The data points form a curve that starts at approximately -5 rad/m at X=0 m, decreases to about -8 rad/m at X=0.05 m, then increases slightly before decreasing again towards -5 rad/m at X=0.15 m.</img> <img>A 3D plot showing ε₄ (m/m) vs X (m). The data points form a curve that starts at approximately 0.05 m/m at X=0 m, decreases to about 0.03 m/m at X=0.05 m, then increases slightly before decreasing again towards 0.05 m/m at X=0.15 m.</img> <img>A 3D plot showing ε₅ (m/m) vs X (m). The data points form a curve that starts at approximately 0.05 m/m at X=0 m, decreases to about 0.03 m/m at X=0.05 m, then increases slightly before decreasing again towards 0.05 m/m at X=0.15 m.</img> <img>A 3D plot showing ε₆ (m/m) vs X (m). The data points form a curve that starts at approximately 0.05 m/m at X=0 m, decreases to about 0.03 m/m at X=0.05 m, then increases slightly before decreasing again towards 0.05 m/m at X=0.15 m.</img>
+
+C
+
+<img>A bar chart showing Position Error (mm) vs Number of Sensors (1, 2, 3). The error bars indicate standard deviation. Number of Sensors | Position Error (mm) --- | --- 1 | ~4 mm 2 | ~6 mm 3 | ~4 mm </img> <img>A bar chart showing Orientation Error (rad) vs Number of Sensors (1, 2, 3). The error bars indicate standard deviation. Number of Sensors | Orientation Error (rad) --- | --- 1 | ~0.1 rad 2 | ~0.15 rad 3 | ~0.2 rad </img>
+
+FIG. 7. 3D shape reconstruction using a 165 mm long soft robot equipped with three Flex-2P6D. (A) Snapshots of the soft robot during various experiments alongside the 3D reconstruction achieved using the proposed methodology. (B) Illustration of the strain field along the soft robot’s length, emphasizing two linear strain elements and one constant strain element. (C) Performance evaluation of the methodology across three experiments. It shows the position and orientation errors of the robot’s tip (mean ± standard deviation).
+
+coordinates, together with their derivatives, define the statics and dynamics of the robot. This attribute holds great potential for closed-loop control schemes and dynamics/kinetostatic estimation methods, particularly in real-time applications.
+
+The developed sensor (Flex-2P6D) consists of six embedded sensing cells to measure the 6D strain. While various soft robot proprioception sensors have been previously proposed to measure different types of deformation (refer to Table 1), this sensor stands out as the first of its kind capable of measuring 6D strain at specific points. Its innovative design allows us to fully embed the sensors and internal actuation inside the soft robot, protecting it from contacts or external elements. Furthermore, Flex-2P6D offers a modular and versatile method for sensorizing soft robots. Each sensor can undergo separate calibration to establish the relation between capacitance values and the localized strains. A linear least-squares method was employed to correlate changes in capacitance with the 6D strain. While more complex regression techniques, such as neural networks, could be employed, the results demonstrate high accuracy, exceeding 95% in the operational range, even when accounting for combinations of different strains and their interference. Subsequently, the complete 3D geometry of the robot can be directly derived from the GVS model. This method contrasts with supervised learning methods,¹⁹ where the data acquisition is often expensive, time-consuming, or even impossible.
+
+In this work, we have developed various prototypes equipped with one or three sensors to assess the effectiveness of our approach. Experiments with just one sensor in a 90 mm long soft robot demonstrated good 3D reconstruction results, particularly in simple robot geometries where strains are consistently uniform along the length. However, it revealed limitations in accurately reconstructing complex shapes due to its inability to detect changes in the strain field. We also implemented our approach on two 165 mm long soft manipulators featuring three embedded sensors positioned across different sections of the robot. These prototypes successfully detect localized deformations and reconstruct complex shapes with high accuracy influenced by both external and internal forces applied at different points. These outcomes underscore the importance of using different sensors to measure the strain at different points due to the infinite degrees of freedom inherent in soft bodies. The choice
+
+Page 10
+<page_number>474</page_number> FELIU-TALEGON ET AL.
+
+A
+
+Camera system position
+Sensor estimation position
+<img>A 3D plot showing a green cylinder with a red line representing the camera system position and a black line representing the sensor estimation position.</img>
+
+B
+
+<img>A 3D plot showing the tip position (x, y, z) over time (0 to 35 seconds). The x-axis ranges from -0.2 to 0.1 meters, the y-axis from -0.15 to 0.1 meters, and the z-axis from -0.2 to 0.1 meters. The plot shows "4 cycles" of oscillation. The legend indicates solid lines for ground truth measurements and dotted lines for estimated measurements for x, y, and z.</img>
+
+C
+
+No interaction with the environment
+
+<img>A 2D plot showing the robot tip trajectory without interacting with the environment. The x-axis ranges from -0.1 to 0.1 meters, the y-axis from -0.1 to 0.1 meters, and the z-axis from -0.1 to 0.1 meters. The trajectory is shown by an orange line.</img>
+
+Interaction with the environment
+
+<img>A 2D plot showing the robot tip trajectory while interacting with the environment. The x-axis ranges from -0.1 to 0.1 meters, the y-axis from -0.1 to 0.1 meters, and the z-axis from -0.1 to 0.1 meters. The trajectory is shown by a blue line. Annotations indicate "Twisting around the rock", "Contact with some leaves", and "Sliding across the object's surface".</img>
+
+<img>A graph showing cable length (mm) over time (0 to 25 seconds). The x-axis is Time (s), and the y-axis is Cable length (mm). Three curves are plotted: Cable 1 (purple), Cable 2 (orange), and Cable 3 (brown).</img>
+
+D
+
+<img>An underwater scene with rocks and plants. A soft robot is visible in the water.</img>
+
+<img>A 3D plot showing a curved object with a red arrow indicating its orientation. The x-axis ranges from -0.2 to 0.1 meters, the y-axis from -0.1 to 0.1 meters, and the z-axis from -0.2 to 0.1 meters.</img>
+
+<img>A 3D plot showing another curved object with a red arrow indicating its orientation. The x-axis ranges from -0.2 to 0.1 meters, the y-axis from -0.1 to 0.1 meters, and the z-axis from -0.2 to 0.1 meters.</img>
+
+<img>A 3D plot showing yet another curved object with a red arrow indicating its orientation. The x-axis ranges from -0.2 to 0.1 meters, the y-axis from -0.1 to 0.1 meters, and the z-axis from -0.2 to 0.1 meters.</img>
+
+FIG. 8. 3D shape reconstruction with internal actuation. Real-world underwater proprioception experiments were performed, validating the effectiveness of our approach in underwater scenarios while physically interacting with the environment. (A) Shape reconstruction results following an open-loop rectangular trajectory using cable actuation. The system executes a four-cycle square trajectory. (B) Comparison between the ground truth measurements (solid lines) and the estimated measurements obtained with the sensors (dotted lines). (C) Comparison of the estimated robot tip trajectories between two underwater experiments employing the same open-loop policy shown in the lower part of the figure. The first experiment displays the system’s movement without interacting with the environment. In contrast, the second experiment involves placing various objects along the trajectory to facilitate interaction with them. The illustration highlights certain actions of the system during the interaction (see Supplementary Movie S6 for more details). (D) Snapshots of the soft robot during the underwater experiment while making contact with the objects alongside the 3D reconstruction.
+
+of two linear elements and one constant element for defining the local basis of the current design is not unique. Several other combinations are possible, as long as the number and location of the nodes remain the same. One can think of a single element with a quadratic basis, having nodes at X = 0, X = L/3, and X = 2L/3. In this case, the strain values at X in the range from 2L/3 to L are extrapolated. Another possibility is to divide the entire length into three piecewise constant strain elements. In this scenario, the strain field would be discontinuous. The current choice of strain basis ensures continuity and linearly interpolates the strain based on the nodal values of the first two elements (three nodes). For the last element, a constant strain value corresponding to the third node is used.
+
+Increasing the number of sensors would likely result in improved performance in geometric reconstruction, reducing errors, especially in very complex shapes or longer manipulators. However, this improvement would come at the cost of increased system complexity. Scaling our approach to accommodate a greater number of sensors is easily achievable due to its utilization of the I2C protocol for communication. In terms of current limitations, Flex-2P6D can only be integrated in cross-sections with sizes bigger than the sensor itself. Limiting the implementation of the sensor to thinner soft robots, for example, in minimally invasive applications. For a future study, we envision the adoption of advanced technologies to miniaturize the components of the sensors to be utilized in a wider range of soft robot manipulators.
+
+In summary, the proposed proprioception system represents a promising solution for addressing a wide spectrum of unsolved tasks. It demonstrated the ability to accurately estimate complex shapes under various conditions, including challenging scenarios involving physical interaction within underwater environments. This advancement opens up a broad range of possibilities, such as noninvasive animal monitoring and performing sampling tasks or inspection in human-made underwater structures such as oil and gas pipelines. These applications are driven by the safe interaction between soft robots and nature, ultimately aiming to minimize the impact on animals, plants, and humans. Moreover, we believe that our approach, which is based on embedded
+
+Page 11
+SOFT ROBOT PROPRIOCEPTION USING 6D STRAIN SENSORS <page_number>475</page_number>
+
+sensors, could be complemented with surface sensors, such as e-skin8,18 or whiskers,44 promoting the creation of hyper-redundant sensorized systems capable of perceiving multiple physical parameters. We firmly believe that this integration could significantly enhance the information gathered from the environment, playing an important role in achieving full autonomy for these systems. This is an area we intend to explore in our forthcoming studies. Additionally, our future research will prioritize the estimation of the interaction forces using the proposed sensory system.
+
+Acknowledgment
+
+The authors thank Rawan Abdelfattah for her work in helping with the realization of Figure 2.
+
+Authors’ Contributions
+
+Conceptualization: D.F.-T., A.T.M., and F.R. Methodology: D.F.-T., Y.A.A., A.T.M., A.Y.A., and F.R. Investigation: D.F.-T., Y.A.A., A.Y.A., A.T.M., and F.R. Design and development: D.F.-T., Y.A.A., A.Y.A., and A.T.M. Experimentation: D.F.-T. and Y.A.A. Visualization: D.F.-T., Y.A.A., A.T.M., and A.Y.A. Funding acquisition: F.R. Project administration: F.R. Supervision: D.F.-T., A.T.M., and F.R. Writing—original draft: D.F.-T., A.T.M., and F.R. Writing—review and editing: D.F.-T., Y.A.A., A.T.M., A.Y.A., and F.R.
+
+Author Disclosure Statement
+
+No competing financial interests exist.
+
+Funding Information
+
+The work was supported by the U.S. Office of Naval Research Global under grant N62909-21-1-2033 and in part by the Khalifa University of Science and Technology under grants CIRA-2020-074 and RC1-2018-KUCARS.
+
+Supplementary Materials
+
+Supplementary Data Supplementary Figure S1 Supplementary Figure S2 Supplementary Figure S3 Supplementary Figure S4 Supplementary Figure S5 Supplementary Figure S6 Supplementary Figure S7 Supplementary Figure S8 Supplementary Figure S9 Supplementary Movie S1 Supplementary Movie S2 Supplementary Movie S3 Supplementary Movie S4 Supplementary Movie S5 Supplementary Movie S6
+
