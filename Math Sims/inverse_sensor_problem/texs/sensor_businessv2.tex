@@ -1,0 +1,86 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+
+\geometry{letterpaper, margin=1in}
+
+\title{\textbf{Product Specification: OptoSpine 6DoF Soft Sensor}}
+\author{System Architecture \& Hardware Engineering Document}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Executive Summary}
+This document outlines the architecture for a macro-scale, ''cut-to-length'' 6 Degrees of Freedom (6DoF) shape-sensing spine. By leveraging discrete optoelectronic brightness measurements locally digitized on a flexible I2C bus, this system bridges the gap between high-cost surgical Fiber Bragg Grating (FBG) systems and low-reliability DIY resistive/capacitive flex sensors.
+
+\section{Problem Statement \& Target Market}
+\subsection{The Market Gap}
+Current soft robot shape reconstruction relies on two extremes:
+\begin{itemize}
+    \item \textbf{High-End Medical (FBG \& OFDR):} Deliver sub-millimeter precision but require delicate optical fibers and $\$10,000+$ laser interrogators. Unsuitable for macro-scale soft robotics.
+    \item \textbf{Low-Cost Prototypes (Capacitive/Resistive):} Highly susceptible to environmental interference, exhibit severe hysteresis, and typically only measure bending in 1 or 2 axes rather than true 6DoF strain.
+\end{itemize}
+
+\subsection{The Proposed Solution}
+We propose an off-the-shelf, cut-to-length "sensing noodle." Users can cut an $N$-node segment, connect it to a USB bridge, and instantly stream 6DoF spatial data. The optoelectronic method eliminates the hysteresis of capacitive plates and the magnetic interference of Hall Effect sensors, providing the most mathematically robust framework for macro-scale proprioception.
+
+\section{Hardware Architecture \& Component Selection}
+\subsection{Optoelectronic Core: 0201 Components}
+\begin{itemize}
+    \item \textbf{Light Source:} SunLED NanoPoint-0201 Series (XZxx155x).
+    \item \textbf{Rationale:} This footprint offers a 50\% size reduction compared to standard 0402 packages, allowing 6 LEDs to be arranged in a tightly packed radial configuration behind the mask slits without exceeding the 3mm board diameter.
+\end{itemize}
+
+\subsection{Data Acquisition: Micro-ADC}
+\begin{itemize}
+    \item \textbf{Component:} Texas Instruments ADS1113 (16-bit, I2C).
+    \item \textbf{Rationale:} Resolves sub-micron mask displacements. The 16-bit quantization ensures angular detection resolution of $<0.01^\circ$.
+\end{itemize}
+
+\section{Optomechanical Design: Sensor Length Trade-offs}
+A critical design parameter is the internal height/volume of the sensor node (the distance between the LED source and the aperture mask). While elongating the sensor might intuitively seem beneficial to increase the physical displacement of the light beam, it introduces severe kinematic and optical penalties.
+
+\subsection{The "Rigid Bone" Effect}
+In a continuum soft robot, rigid sensor nodes act as stiff "bones." If a node is elongated (e.g., from 2mm to 15mm), the robot ceases to bend continuously and instead articulates rigidly like a chain of sausages. A minimal node height preserves the continuous kinematic curves required for accurate Cosserat Rod or Cubic Spline shape reconstruction.
+
+\subsection{The Optical Lever vs. Inverse Square Law}
+Elongating the sensor increases the "optical lever." The physical displacement $x$ of the light beam on the mask is a function of the gap distance $L$ and the bend angle $\theta$:
+
+
+
+$$x = L \tan(\theta)$$
+
+However, this linear gain in displacement is overwhelmingly negated by the exponential loss of light intensity. Standard 0201 LEDs emit light in a wide cone. As the gap distance $d$ increases, the light intensity $I$ striking the mask degrades according to the inverse square law:
+
+
+
+$$I \propto \frac{1}{d^2}$$
+
+Doubling the sensor height reduces the baseline signal at the ADC by a factor of four. This loss of dynamic range pushes the baseline signal dangerously close to the thermal and electrical noise floor. 
+
+\subsection{The Trap of Folded Optics (Mirrors and Lenses)}
+Attempting to mitigate the inverse square law via internal mirrors or micro-collimating lenses introduces catastrophic manufacturing complexity. At a 3mm diameter, a mirror misalignment of even $0.1^\circ$ during assembly will direct the beam entirely off the photodiode. Relying on a short, lens-less gap ensures maximum baseline brightness, eliminates complex calibration, and keeps the BOM cost low.
+
+\section{Calculations \& System Models}
+\subsection{Optimal Placement \& Nyquist Sampling}
+To accurately reconstruct the continuous macro-state of the robot, the spatial pitch ($S$) must satisfy the Nyquist criterion for the minimum bend radius ($R_{min}$).
+
+$$S \leq \frac{R_{min}}{2}$$
+
+For a robot capable of a $76\text{mm}$ S-curve, applying a conservative margin yields $S = 20\text{mm}$.
+
+\subsection{Bus Capacitance \& Noise Estimates}
+Assuming an ADC pin capacitance of $10\text{pF}$ and an I2C cable capacitance of $50\text{pF/m}$, a 1-meter unbuffered bus yields:
+
+$$C_{total} = (50 \times 10\text{pF}) + (1\text{m} \times 50\text{pF/m}) = 550\text{pF}$$
+
+Because $550\text{pF} > 400\text{pF}$ (I2C Fast-Mode limit), the bus is segmented using TCA4311A buffers every 10 nodes, dropping the local capacitance to $110\text{pF}$ and ensuring excellent signal integrity.
+
+\end{document}

@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\geometry{letterpaper, margin=1in}
+
+\title{\textbf{Product Specification: OptoSpine 6DoF Soft Sensor}}
+\author{System Architecture \& Hardware Engineering Document}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Executive Summary}
+This document outlines the architecture for a macro-scale, ''cut-to-length'' 6 Degrees of Freedom (6DoF) shape-sensing spine. By leveraging discrete optoelectronic brightness measurements locally digitized on a flexible I2C bus, this system bridges the gap between high-cost surgical Fiber Bragg Grating (FBG) systems and low-reliability DIY resistive/capacitive flex sensors.
+
+\section{Problem Statement \& Target Market}
+\subsection{The Market Gap}
+Current soft robot shape reconstruction relies on two extremes:
+\begin{itemize}
+    \item \textbf{High-End Medical (FBG \& OFDR):} Deliver sub-millimeter precision but require delicate optical fibers and $\$10,000+$ laser interrogators. Unsuitable for macro-scale soft robotics (e.g., 1-meter robotic manipulators, assistive wearable tech).
+    \item \textbf{Low-Cost Prototypes (Capacitive/Resistive):} Highly susceptible to environmental interference (human touch, humidity), exhibit severe hysteresis, and typically only measure bending in 1 or 2 axes rather than true 6DoF strain.
+\end{itemize}
+
+\subsection{The Proposed Solution}
+We propose an off-the-shelf, cut-to-length "sensing noodle." Users can cut an $N$-node segment, connect it to a USB bridge, and instantly stream 6DoF spatial data. The optoelectronic method (LEDs and apertures) eliminates the hysteresis of capacitive plates and the magnetic interference of Hall Effect sensors, providing the most mathematically robust framework for macro-scale proprioception.
+
+\section{Hardware Architecture \& Component Selection}
+To fit a rigid 6DoF sensing node onto a 3mm diameter PCB while maintaining high-fidelity data, extreme miniaturization is required.
+
+\subsection{Optoelectronic Core: 0201 Components}
+\begin{itemize}
+    \item \textbf{Light Source:} SunLED NanoPoint-0201 Series (XZxx155x).
+    \item \textbf{Footprint:} $0.65\text{mm} \times 0.35\text{mm} \times 0.20\text{mm}$.
+    \item \textbf{Rationale:} This footprint offers a $50\%$ size reduction compared to standard 0402 packages, allowing 6 LEDs to be arranged in a tightly packed radial configuration behind the mask slits without exceeding the 3mm board diameter.
+\end{itemize}
+
+\subsection{Data Acquisition: Micro-ADC}
+\begin{itemize}
+    \item \textbf{Component:} Texas Instruments ADS1113.
+    \item \textbf{Specifications:} 16-bit resolution, I2C interface, internal reference.
+    \item \textbf{Footprint:} X2QFN-10 package ($2.0\text{mm} \times 1.5\text{mm} \times 0.4\text{mm}$).
+    \item \textbf{Rationale:} Resolves sub-micron mask displacements while easily fitting on the reverse side of the 3mm PCB. The 16-bit quantization ensures angular detection resolution of $<0.01^\circ$.
+\end{itemize}
+
+\subsection{I2C Daisy-Chain \& Signal Integrity}
+Standard I2C limits bus capacitance to $400\text{pF}$ in Fast-Mode ($400\text{kHz}$). 
+\begin{itemize}
+    \item \textbf{Component:} Texas Instruments TCA4311A (Hot-Swappable I2C Bus Buffer).
+    \item \textbf{Placement:} Inserted inline every 10 nodes ($200\text{mm}$).
+    \item \textbf{Rationale:} The TCA4311A breaks the continuous parasitic capacitance of the 1-meter bus, buffering the signals to maintain sharp clock edges. It also enables the "cut-to-length" hot-swapping functionality without halting the I2C master.
+\end{itemize}
+
+\subsection{End-Effector Microcontroller (USB Bridge)}
+\begin{itemize}
+    \item \textbf{Component:} Raspberry Pi RP2040.
+    \item \textbf{Rationale:} Its dual Cortex-M0+ cores and Programmable I/O (PIO) blocks allow for high-speed deterministic polling of the 50-node I2C bus. Core 0 handles sensor acquisition, while Core 1 performs the matrix geometry calculations to output an instant spatial point-cloud via USB-C to the host.
+\end{itemize}
+
+\section{Calculations \& System Models}
+
+\subsection{Optimal Placement \& Nyquist Sampling}
+To accurately reconstruct the continuous macro-state of the robot without aliasing or "blind spots," the spatial pitch ($S$) must satisfy the Nyquist criterion for the robot's minimum bend radius ($R_{min}$).
+
+$$ S \leq \frac{R_{min}}{2} $$
+
+For a soft robot capable of a $76\text{mm}$ S-curve bend radius, applying a conservative engineering margin yields:
+
+$$ S = 20\text{mm} $$
+
+This results in a density of 50 nodes per 100 cm spine.
+
+\subsection{Bus Capacitance \& Noise Estimates}
+The total parasitic capacitance ($C_{total}$) of an unbuffered I2C line is driven by the node input capacitance ($C_{node}$) and the trace/wire capacitance ($C_{wire}$).
+
+$$ C_{total} = \sum_{i=1}^{N} C_{node, i} + C_{wire} $$
+
+Assuming an ADS1113 pin capacitance of $10\text{pF}$ and an I2C cable capacitance of $50\text{pF/m}$:
+
+$$ C_{total} = (50 \times 10\text{pF}) + (1\text{m} \times 50\text{pF/m}) = 550\text{pF} $$
+
+Because $550\text{pF} > 400\text{pF}$ (the maximum specification for I2C Fast-Mode), the bus must be segmented. By placing a TCA4311A buffer every 10 nodes, the localized capacitance seen by any segment drops to:
+
+$$ C_{segment} = (10 \times 10\text{pF}) + (0.2\text{m} \times 50\text{pF/m}) = 110\text{pF} $$
+
+This $110\text{pF}$ segment capacitance provides an excellent noise margin and ensures square data pulses, keeping the data error rate negligible across the 1-meter span.
+
+\end{document}

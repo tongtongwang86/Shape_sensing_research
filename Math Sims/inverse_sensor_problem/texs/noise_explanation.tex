@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\title{6DoF Optoelectronic Sensing for Miniaturized Soft Robotic Spines}
+\author{Framework: Inverse Kinematics, Noise Modeling, and Geometric Optimization}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{The Forward Kinematics (Sensor-to-Strain)}
+The mapping from 6 raw sensor values (horizontal $h_i$ and vertical $v_i$ intensity changes) to the Cartesian 6DoF vector $\vec{O}$ is governed by the linear transformation:
+
+\begin{equation}
+\vec{O} = \mathbf{M} \vec{S}
+\end{equation}
+
+Where $\vec{O} = [X, Y, Z, R_x, R_y, R_z]^T$ and $\vec{S} = [h_1, v_1, h_2, v_2, h_3, v_3]^T$. For a triangular array with radius $L$, the matrix $\mathbf{M}$ is defined by the geometry:
+
+\begin{equation}
+\mathbf{M} = \begin{bmatrix} 
+1 & 0 & -0.5 & 0 & -0.5 & 0 \\
+0 & 0 & \frac{\sqrt{3}}{2} & 0 & -\frac{\sqrt{3}}{2} & 0 \\
+0 & 1 & 0 & 1 & 0 & 1 \\
+0 & \frac{1}{L} & 0 & -\frac{0.5}{L} & 0 & -\frac{0.5}{L} \\
+0 & 0 & 0 & \frac{\sqrt{3}}{2L} & 0 & -\frac{\sqrt{3}}{2L} \\
+\frac{1}{L} & 0 & \frac{1}{L} & 0 & \frac{1}{L} & 0 
+\end{bmatrix}
+\end{equation}
+
+\textbf{Note on Scaling:} As $L \to 0$ (miniaturization), the rotational terms ($\frac{1}{L}$) approach infinity, meaning a tiny bit of noise in the light intensity is amplified into a massive rotational error.
+
+\section{The Inverse Problem (Synthetic Data Generation)}
+To simulate what the sensors "see" for a given robot pose, we invert the system:
+
+\begin{equation}
+\vec{S} = \mathbf{M}^{-1} \vec{O}
+\end{equation}
+
+\begin{lstlisting}[language=Matlab, caption=Inverse Solver Snippet]
+% Generate sensor intensities for a 5-degree Pitch (Rx)
+strain_vector = [0; 0; 0; 5; 0; 0];
+synthetic_sensors = M \ strain_vector; % Backslash is the inverse solver
+\end{lstlisting}
+
+\section{Stochastic Noise Modeling}
+In your 3mm board, the signal-to-noise ratio (SNR) is dominated by Shot Noise and Quantization. We model the reconstructed error $\Sigma_{O}$ based on input sensor variance $\sigma_s^2$:
+
+\begin{equation}
+\Sigma_{O} = \mathbf{M} \begin{bmatrix} \sigma_{s1}^2 & \dots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \dots & \sigma_{s6}^2 \end{bmatrix} \mathbf{M}^T
+\end{equation}
+
+\textbf{The Condition Number ($\kappa$):}
+A key metric for optimization is $\kappa(\mathbf{M})$. If $\kappa(\mathbf{M})$ is high, the matrix is "ill-conditioned," and the 6DoF output becomes unstable.
+
+\section{Spacing and Saint-Venant’s Localization}
+The legitimacy of a localized strain measurement is constrained by the mechanical interaction between the rigid sensor and the soft substrate.
+
+\begin{itemize}
+    \item \textbf{Influence Zone ($R_{inf}$):} Dissipates at a distance $d \approx 2 \times D_{sensor}$.
+    \item \textbf{Reconstruction Density:} Spacing $S$ must satisfy the Nyquist-like criterion:
+    \begin{equation}
+    S < \frac{\rho_{min}}{2}
+    \end{equation}
+\end{itemize}
+
+\begin{lstlisting}[language=Matlab, caption=Condition Number Optimization]
+% Loop to find the "Knee" of the error curve
+for L = linspace(0.5, 10, 100)
+    Matrix_Condition(end+1) = cond(build_M(L)); 
+end
+plot(L, Matrix_Condition); % Identify physical limit
+\end{lstlisting}
+
+\end{document}
+

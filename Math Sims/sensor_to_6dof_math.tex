@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\section*{The Mathematics of 6DoF Optical Decoding}
+
+To solve this, we don't try to calculate the physics of photons passing through slits. Instead, we use a \textbf{Linearized Calibration Matrix}. We assume that for very small movements, the change in light intensity is directly proportional to the movement of the top plate.
+
+Let the 6DoF pose of the top plate relative to the bottom plate be represented by a 6x1 column vector $P$, containing translation $(x,y,z)$ and rotation $(\alpha, \beta, \gamma)$:
+\begin{equation}
+P = \begin{bmatrix} x \\ y \\ z \\ \alpha \\ \beta \\ \gamma \end{bmatrix}
+\end{equation}
+
+Let the raw brightness readings from your 6 photodetectors be represented by a 6x1 column vector $V$:
+\begin{equation}
+V = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \\ v_4 \\ v_5 \\ v_6 \end{bmatrix}
+\end{equation}
+
+\subsection*{1. The Forward Model}
+Assuming small displacements, the relationship between the physical pose $P$ and the sensor voltages $V$ is governed by a 6x6 sensitivity matrix (often called the Jacobian), denoted as $S$:
+\begin{equation}
+V = S \cdot P
+\end{equation}
+
+\subsection*{2. The Inverse Model (What your code actually does)}
+To find the physical pose from your sensor readings, you multiply your voltage readings by the inverse of the sensitivity matrix. We call this the Calibration Matrix, $C$ (where $C = S^{-1}$):
+\begin{equation}
+P = C \cdot V
+\end{equation}
+
+Expanded, this looks like:
+\begin{equation}
+\begin{bmatrix} x \\ y \\ z \\ \alpha \\ \beta \\ \gamma \end{bmatrix} = \begin{bmatrix} 
+c_{11} & c_{12} & c_{13} & c_{14} & c_{15} & c_{16} \\ 
+c_{21} & c_{22} & c_{23} & c_{24} & c_{25} & c_{26} \\ 
+c_{31} & c_{32} & c_{33} & c_{34} & c_{35} & c_{36} \\ 
+c_{41} & c_{42} & c_{43} & c_{44} & c_{45} & c_{46} \\ 
+c_{51} & c_{52} & c_{53} & c_{54} & c_{55} & c_{56} \\ 
+c_{61} & c_{62} & c_{63} & c_{64} & c_{65} & c_{66} 
+\end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \\ v_3 \\ v_4 \\ v_5 \\ v_6 \end{bmatrix}
+\end{equation}
+
+\subsection*{3. Constructing the 4x4 Transformation Matrix ($T$)}
+Once you have $P$, you map the translation $[x, y, z]^T$ directly into the $T$ matrix. You map the rotations $(\alpha, \beta, \gamma)$ by multiplying three standard rotation matrices together ($R = R_z(\gamma) R_y(\beta) R_x(\alpha)$):
+
+\begin{equation}
+T = \begin{bmatrix} 
+R_{11} & R_{12} & R_{13} & x \\ 
+R_{21} & R_{22} & R_{23} & y \\ 
+R_{31} & R_{32} & R_{33} & z \\ 
+0 & 0 & 0 & 1 
+\end{bmatrix}
+\end{equation}
+
+\end{document}

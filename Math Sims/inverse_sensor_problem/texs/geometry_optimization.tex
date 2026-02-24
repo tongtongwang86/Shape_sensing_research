@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\title{Updated 6DoF Sensing Framework: Scaling Limits and Spine Density}
+\author{Analysis of 3mm Miniaturization Tax and Continuum Reconstruction}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{The "Miniaturization Tax" and Noise Amplification}
+Experimental modeling of the 3mm sensor board reveals a critical stability threshold. As the board diameter $D$ decreases, the condition number $\kappa(\mathbf{M})$ grows exponentially. 
+
+\begin{itemize}
+    \item \textbf{Rotation Error ($R_{err}$):} Below 5mm, the leverage arm $L$ is insufficient to distinguish tilt from translation. At 3mm, rotational noise is amplified by approximately $4\times$ compared to a 20mm baseline.
+    \item \textbf{Translation Jitter:} While $X, Y, Z$ are less dependent on $L$, they suffer from high-frequency "jagged" noise due to the low Signal-to-Noise Ratio (SNR) of small-aperture photodiodes.
+\end{itemize}
+
+\section{Continuum Spine Reconstruction Density}
+To reconstruct the shape of a soft robot (e.g., "pool noodle" analogy) bending up to $\theta = 75^\circ$ ($1.31$ rad) over a length $L_{spine} = 100$mm, we calculate the minimum bend radius $\rho_{min}$:
+
+\begin{equation}
+\rho_{min} = \frac{L_{spine}}{\theta_{rad}} \approx 76.3\text{ mm}
+\end{equation}
+
+Applying the Nyquist-criterion for curvature sampling, the sensor spacing $S$ must satisfy:
+\begin{equation}
+S \leq \frac{\rho_{min}}{2} \approx 38\text{ mm}
+\end{equation}
+
+\textbf{Recommended Configuration:} To account for S-curves and complex strain localized at the 3mm board, a spacing of \textbf{20--25mm} is recommended, resulting in a 5-sensor "string of pearls" for a 100mm spine.
+
+\section{Mechanical Interaction: Rigid-Inclusion Correction}
+Because the 3mm PCB is rigid relative to the 5mm soft spine, the sensor creates a "dead zone" where the silicone cannot bend naturally. The effective sensing length $L_{eff}$ is reduced by the inclusion diameter $D$:
+
+\begin{equation}
+L_{eff} = S - (1.5 \times D_{sensor})
+\end{equation}
+
+For a 3mm board, each sensor "blindfolds" approximately 4.5mm of the robot's local curvature.
+
+\begin{lstlisting}[language=Matlab, caption=Optimal Density Calculation]
+% Calculate required sensors for a given max bend
+L_spine = 100; % mm
+max_bend_deg = 75;
+rho_min = L_spine / deg2rad(max_bend_deg);
+spacing = rho_min / 2; % Nyquist limit
+num_sensors = ceil(L_spine / spacing);
+fprintf('Required Sensors: %d at %0.1f mm intervals\n', num_sensors, spacing);
+\end{lstlisting}
+
+\end{document}
+
