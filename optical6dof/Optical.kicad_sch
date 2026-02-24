@@ -1284,7 +1284,7 @@
 		(uuid "258e6d27-0519-46f3-8bcf-a03455ec9e31")
 	)
 	(junction
-		(at 208.915 103.505)
+		(at 177.8 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "91c0cb6b-c9b2-471c-a1bb-d5cb31b7d1b4")
@@ -1296,38 +1296,38 @@
 		(uuid "a4856d97-7f44-43be-8513-1f0c26a1f26e")
 	)
 	(junction
-		(at 158.75 104.14)
+		(at 146.05 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac45334c-d8e7-4f03-a951-48d46bf5d396")
 	)
 	(junction
-		(at 144.78 104.14)
+		(at 132.08 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae10a965-052b-46a9-9ffd-28fa5057568c")
 	)
 	(junction
-		(at 227.965 103.505)
+		(at 196.85 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b41393ee-d211-4240-ae82-a9eae807a750")
 	)
 	(junction
-		(at 51.435 104.14)
+		(at 65.405 102.235)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f926a915-7a9a-4c4d-b565-17e3fb35d7df")
 	)
 	(junction
-		(at 40.005 104.14)
+		(at 53.975 102.235)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe819e8e-2fa3-4135-a8e9-8d4b1e098973")
 	)
 	(wire
 		(pts
-			(xy 51.435 97.79) (xy 51.435 104.14)
+			(xy 65.405 95.885) (xy 65.405 102.235)
 		)
 		(stroke
 			(width 0)
@@ -1337,7 +1337,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.915 103.505) (xy 208.915 113.03)
+			(xy 177.8 102.87) (xy 177.8 112.395)
 		)
 		(stroke
 			(width 0)
@@ -1347,7 +1347,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 79.375) (xy 45.72 82.55)
+			(xy 59.69 77.47) (xy 59.69 80.645)
 		)
 		(stroke
 			(width 0)
@@ -1357,7 +1357,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.965 103.505) (xy 227.965 113.03)
+			(xy 196.85 102.87) (xy 196.85 112.395)
 		)
 		(stroke
 			(width 0)
@@ -1367,7 +1367,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.345 103.505) (xy 216.535 103.505)
+			(xy 189.23 102.87) (xy 185.42 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1377,7 +1377,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 119.38) (xy 144.78 115.57)
+			(xy 132.08 119.38) (xy 132.08 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1397,7 +1397,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.345 93.98) (xy 216.535 93.98)
+			(xy 189.23 93.345) (xy 185.42 93.345)
 		)
 		(stroke
 			(width 0)
@@ -1407,7 +1407,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.005 107.95) (xy 40.005 104.14)
+			(xy 53.975 106.045) (xy 53.975 102.235)
 		)
 		(stroke
 			(width 0)
@@ -1417,7 +1417,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 95.25) (xy 144.78 104.14)
+			(xy 132.08 95.25) (xy 132.08 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1427,7 +1427,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 97.79) (xy 51.435 97.79)
+			(xy 62.23 95.885) (xy 65.405 95.885)
 		)
 		(stroke
 			(width 0)
@@ -1447,7 +1447,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 107.95) (xy 144.78 104.14)
+			(xy 132.08 107.95) (xy 132.08 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1467,7 +1467,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.345 113.03) (xy 216.535 113.03)
+			(xy 189.23 112.395) (xy 185.42 112.395)
 		)
 		(stroke
 			(width 0)
@@ -1477,7 +1477,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 95.25) (xy 149.225 95.25)
+			(xy 132.08 95.25) (xy 136.525 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1497,7 +1497,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.005 97.79) (xy 43.18 97.79)
+			(xy 53.975 95.885) (xy 57.15 95.885)
 		)
 		(stroke
 			(width 0)
@@ -1507,7 +1507,7 @@
 	)
 	(wire
 		(pts
-			(xy 51.435 119.38) (xy 51.435 115.57)
+			(xy 65.405 117.475) (xy 65.405 113.665)
 		)
 		(stroke
 			(width 0)
@@ -1547,7 +1547,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.005 97.79) (xy 40.005 104.14)
+			(xy 53.975 95.885) (xy 53.975 102.235)
 		)
 		(stroke
 			(width 0)
@@ -1557,7 +1557,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 103.505) (xy 208.915 103.505)
+			(xy 168.275 102.87) (xy 177.8 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1567,7 +1567,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.005 119.38) (xy 40.005 115.57)
+			(xy 53.975 117.475) (xy 53.975 113.665)
 		)
 		(stroke
 			(width 0)
@@ -1577,7 +1577,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.915 93.98) (xy 208.915 103.505)
+			(xy 177.8 93.345) (xy 177.8 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1587,7 +1587,7 @@
 	)
 	(wire
 		(pts
-			(xy 51.435 107.95) (xy 51.435 104.14)
+			(xy 65.405 106.045) (xy 65.405 102.235)
 		)
 		(stroke
 			(width 0)
@@ -1597,7 +1597,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 119.38) (xy 158.75 115.57)
+			(xy 146.05 119.38) (xy 146.05 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1607,7 +1607,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.765 76.835) (xy 151.765 80.01)
+			(xy 139.065 76.835) (xy 139.065 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1617,7 +1617,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.305 95.25) (xy 158.75 95.25)
+			(xy 141.605 95.25) (xy 146.05 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1627,7 +1627,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 95.25) (xy 158.75 104.14)
+			(xy 146.05 95.25) (xy 146.05 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1637,7 +1637,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.775 103.505) (xy 227.965 103.505)
+			(xy 200.66 102.87) (xy 196.85 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1657,7 +1657,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 107.95) (xy 158.75 104.14)
+			(xy 146.05 107.95) (xy 146.05 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1677,7 +1677,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.965 93.98) (xy 227.965 103.505)
+			(xy 196.85 93.345) (xy 196.85 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1696,7 +1696,7 @@
 		(uuid "22392e31-4e94-483c-803a-f687dd525a3d")
 	)
 	(label "B2"
-		(at 104.775 149.86 180)
+		(at 93.98 137.795 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1706,7 +1706,7 @@
 		(uuid "2af5d796-1ee3-4272-8a25-1081ca863ffa")
 	)
 	(label "SDA"
-		(at 141.605 149.86 0)
+		(at 130.81 137.795 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1716,7 +1716,7 @@
 		(uuid "3332e8c7-2dd3-42ec-9020-b88d9289862e")
 	)
 	(label "C2"
-		(at 158.75 104.14 180)
+		(at 146.05 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1726,7 +1726,7 @@
 		(uuid "4bec199b-4580-49ba-8094-e9c8abc9ecba")
 	)
 	(label "B1"
-		(at 104.775 154.94 180)
+		(at 93.98 142.875 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1746,7 +1746,7 @@
 		(uuid "5abe9cc5-1cd2-4991-825f-ae031cbe05f5")
 	)
 	(label "A1"
-		(at 104.775 147.32 180)
+		(at 93.98 135.255 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1756,7 +1756,7 @@
 		(uuid "63dc3be5-1368-4590-b853-65ed596cf5a3")
 	)
 	(label "C1"
-		(at 141.605 157.48 0)
+		(at 130.81 145.415 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1766,7 +1766,7 @@
 		(uuid "70edbe28-cb96-4226-91d8-339d9f370c60")
 	)
 	(label "A2"
-		(at 51.435 104.14 180)
+		(at 65.405 102.235 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1776,7 +1776,7 @@
 		(uuid "8f27b248-cd73-479b-b43a-f73f4de7ae06")
 	)
 	(label "A2"
-		(at 104.775 157.48 180)
+		(at 93.98 145.415 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1786,7 +1786,7 @@
 		(uuid "90861de6-8df1-4263-b98e-647d214a82d2")
 	)
 	(label "C1"
-		(at 144.78 104.14 180)
+		(at 132.08 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1796,7 +1796,7 @@
 		(uuid "a5873dea-38b8-4922-8858-c6599b6b304f")
 	)
 	(label "A1"
-		(at 40.005 104.14 180)
+		(at 53.975 102.235 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1806,7 +1806,7 @@
 		(uuid "ac5612ca-4af4-436a-8016-96128969130e")
 	)
 	(label "SCL"
-		(at 141.605 152.4 0)
+		(at 130.81 140.335 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1816,7 +1816,7 @@
 		(uuid "d6e69221-adb5-4cd5-870a-2e6f99dd61ae")
 	)
 	(label "C2"
-		(at 104.775 165.1 180)
+		(at 93.98 153.035 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1827,7 +1827,7 @@
 	)
 	(global_label "VDD"
 		(shape input)
-		(at 151.765 76.835 90)
+		(at 139.065 76.835 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1837,7 +1837,7 @@
 		)
 		(uuid "0efa13d2-cf20-4983-8960-fd823301e804")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.765 70.2212 90)
+			(at 139.065 70.2212 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1849,7 +1849,7 @@
 	)
 	(global_label "VDD"
 		(shape input)
-		(at 199.39 103.505 180)
+		(at 168.275 102.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1859,7 +1859,7 @@
 		)
 		(uuid "88d7ff36-c905-4c40-a545-f979adff94b6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 192.7762 103.505 0)
+			(at 161.6612 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1893,7 +1893,7 @@
 	)
 	(global_label "VDD"
 		(shape input)
-		(at 45.72 79.375 90)
+		(at 59.69 77.47 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1903,7 +1903,7 @@
 		)
 		(uuid "afa4ab70-56cd-4029-b089-c0345587b9b9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.72 72.7612 90)
+			(at 59.69 70.8562 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1915,7 +1915,7 @@
 	)
 	(global_label "VDD"
 		(shape input)
-		(at 141.605 165.1 0)
+		(at 130.81 153.035 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1925,7 +1925,7 @@
 		)
 		(uuid "df95c752-911f-4e4e-9c7a-f6e1c027817a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.2188 165.1 0)
+			(at 137.4238 153.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2019,7 +2019,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 40.005 111.76 0)
+		(at 53.975 109.855 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2028,7 +2028,7 @@
 		(fields_autoplaced yes)
 		(uuid "07e6c463-4082-40df-a855-fef25cad1b76")
 		(property "Reference" "R1"
-			(at 42.545 110.4899 0)
+			(at 56.515 108.5849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2037,7 +2037,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 42.545 113.0299 0)
+			(at 56.515 111.1249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2046,7 +2046,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 38.227 111.76 90)
+			(at 52.197 109.855 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2055,7 +2055,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2064,7 +2064,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2073,7 +2073,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2082,7 +2082,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2091,7 +2091,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2100,7 +2100,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2109,7 +2109,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2118,7 +2118,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2127,7 +2127,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2136,7 +2136,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2145,7 +2145,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2154,7 +2154,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2163,7 +2163,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2172,7 +2172,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2181,7 +2181,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2190,7 +2190,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2199,7 +2199,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2208,7 +2208,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2217,7 +2217,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2226,7 +2226,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2235,7 +2235,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2244,7 +2244,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2253,7 +2253,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2262,7 +2262,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2271,7 +2271,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2280,7 +2280,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2289,7 +2289,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2298,7 +2298,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2307,7 +2307,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2316,7 +2316,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/delta-electronics-cyntec/PFR02S-152-FNH/9761599"
-			(at 40.005 111.76 0)
+			(at 53.975 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2660,7 +2660,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 40.005 104.14 270)
+		(at 53.975 102.235 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2668,7 +2668,7 @@
 		(dnp no)
 		(uuid "2264da70-6178-41fc-9f37-4df6bd98b5c5")
 		(property "Reference" "TP1"
-			(at 28.575 102.87 90)
+			(at 42.545 100.965 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2677,7 +2677,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 28.575 105.41 90)
+			(at 42.545 103.505 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2686,7 +2686,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.005 109.22 0)
+			(at 53.975 107.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2695,7 +2695,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.005 109.22 0)
+			(at 53.975 107.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2704,7 +2704,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 40.005 104.14 0)
+			(at 53.975 102.235 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2713,7 +2713,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2722,7 +2722,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2731,7 +2731,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2740,7 +2740,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2749,7 +2749,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2758,7 +2758,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2767,7 +2767,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2776,7 +2776,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,7 +2785,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2794,7 +2794,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2803,7 +2803,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2812,7 +2812,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2821,7 +2821,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2830,7 +2830,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2839,7 +2839,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2848,7 +2848,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2857,7 +2857,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2866,7 +2866,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2875,7 +2875,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2884,7 +2884,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2893,7 +2893,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2902,7 +2902,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2911,7 +2911,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2920,7 +2920,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2929,7 +2929,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2938,7 +2938,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2947,7 +2947,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2956,7 +2956,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 40.005 104.14 90)
+			(at 53.975 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2978,7 +2978,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 158.75 104.14 270)
+		(at 146.05 104.14 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2987,7 +2987,7 @@
 		(fields_autoplaced yes)
 		(uuid "23bb0e82-66b0-492b-a042-72f422b79b61")
 		(property "Reference" "TP6"
-			(at 163.83 102.8699 90)
+			(at 151.13 102.8699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2996,7 +2996,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 163.83 105.4099 90)
+			(at 151.13 105.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3005,7 +3005,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 109.22 0)
+			(at 146.05 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3014,7 +3014,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 109.22 0)
+			(at 146.05 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3023,7 +3023,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 158.75 104.14 0)
+			(at 146.05 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3032,7 +3032,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3041,7 +3041,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3050,7 +3050,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3059,7 +3059,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3068,7 +3068,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,7 +3077,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3086,7 +3086,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3095,7 +3095,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3104,7 +3104,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3113,7 +3113,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3122,7 +3122,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3131,7 +3131,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3140,7 +3140,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3149,7 +3149,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3158,7 +3158,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3167,7 +3167,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3176,7 +3176,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3185,7 +3185,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3194,7 +3194,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3203,7 +3203,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3212,7 +3212,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3221,7 +3221,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3230,7 +3230,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3239,7 +3239,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3248,7 +3248,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3257,7 +3257,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3266,7 +3266,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3275,7 +3275,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 158.75 104.14 90)
+			(at 146.05 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3297,7 +3297,7 @@
 	)
 	(symbol
 		(lib_id "MAX11617EWE:MAX11617EWE+T")
-		(at 104.775 147.32 0)
+		(at 93.98 135.255 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3306,7 +3306,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e8d27fb-145a-4f20-9aaa-46a97ade239f")
 		(property "Reference" "U1"
-			(at 123.19 141.605 0)
+			(at 112.395 129.54 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3314,7 +3314,7 @@
 			)
 		)
 		(property "Value" "MAX11617EWE+T"
-			(at 123.19 144.145 0)
+			(at 112.395 132.08 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3322,7 +3322,7 @@
 			)
 		)
 		(property "Footprint" "library:21-0491G_W162E2-1_MXM"
-			(at 124.841 141.478 0)
+			(at 114.046 129.413 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3332,7 +3332,7 @@
 			)
 		)
 		(property "Datasheet" "MAX11617EWE+T"
-			(at 119.761 143.51 0)
+			(at 108.966 131.445 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3342,7 +3342,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 104.775 147.32 0)
+			(at 93.98 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3351,7 +3351,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX11617EWE-T/3975710"
-			(at 104.775 147.32 0)
+			(at 93.98 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3736,7 +3736,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 224.155 113.03 90)
+		(at 193.04 112.395 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3744,7 +3744,7 @@
 		(dnp no)
 		(uuid "489e33df-fb1f-4ee0-8c10-446491ea1e8a")
 		(property "Reference" "R9"
-			(at 224.155 107.823 90)
+			(at 193.04 107.188 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3752,7 +3752,7 @@
 			)
 		)
 		(property "Value" "200r"
-			(at 224.155 110.363 90)
+			(at 193.04 109.728 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3760,7 +3760,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 224.155 114.808 90)
+			(at 193.04 114.173 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3769,7 +3769,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 224.155 113.03 0)
+			(at 193.04 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,7 +3778,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 224.155 113.03 0)
+			(at 193.04 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3787,7 +3787,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3796,7 +3796,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3805,7 +3805,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3814,7 +3814,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3823,7 +3823,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3832,7 +3832,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3841,7 +3841,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,7 +3850,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3859,7 +3859,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3868,7 +3868,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,7 +3877,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3886,7 +3886,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3895,7 +3895,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3904,7 +3904,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3913,7 +3913,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3922,7 +3922,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3931,7 +3931,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3940,7 +3940,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3949,7 +3949,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3958,7 +3958,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3967,7 +3967,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3976,7 +3976,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3985,7 +3985,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3994,7 +3994,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4003,7 +4003,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4012,7 +4012,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4021,7 +4021,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4030,7 +4030,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0100FR-07200RL/2254275"
-			(at 224.155 113.03 90)
+			(at 193.04 112.395 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4055,7 +4055,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 212.725 103.505 180)
+		(at 181.61 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4063,7 +4063,7 @@
 		(dnp no)
 		(uuid "4e0c8525-55c9-4bbb-b7b3-25cac9e5920d")
 		(property "Reference" "D2"
-			(at 213.233 98.298 0)
+			(at 182.118 97.663 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4071,7 +4071,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 213.233 100.838 0)
+			(at 182.118 100.203 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4079,7 +4079,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4088,7 +4088,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4097,7 +4097,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4106,7 +4106,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4115,7 +4115,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4124,7 +4124,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4133,7 +4133,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4142,7 +4142,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4151,7 +4151,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4160,7 +4160,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4169,7 +4169,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4178,7 +4178,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4187,7 +4187,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4196,7 +4196,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4205,7 +4205,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4214,7 +4214,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4223,7 +4223,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4232,7 +4232,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4241,7 +4241,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4250,7 +4250,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4259,7 +4259,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4268,7 +4268,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4277,7 +4277,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4286,7 +4286,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4295,7 +4295,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4304,7 +4304,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4313,7 +4313,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,7 +4322,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4331,7 +4331,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4340,7 +4340,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4349,7 +4349,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 212.725 103.505 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4357,8 +4357,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.inolux-corp.com/datasheet/IR/Emitter/940%20nm%20SMD/IN-S42CTQHIR_V1.0.pdf"
-			(at 212.725 103.505 0)
+		(property "Digikey" "https://www.digikey.com/en/products/detail/inolux/IN-S42CTQHIR/10384741"
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4383,7 +4383,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 144.78 104.14 270)
+		(at 132.08 104.14 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4391,7 +4391,7 @@
 		(dnp no)
 		(uuid "52772a05-6f0f-4c9f-be48-b2e4eb782e59")
 		(property "Reference" "TP5"
-			(at 135.001 102.616 90)
+			(at 122.301 102.616 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4400,7 +4400,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 135.001 105.156 90)
+			(at 122.301 105.156 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4409,7 +4409,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 109.22 0)
+			(at 132.08 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4418,7 +4418,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 109.22 0)
+			(at 132.08 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4427,7 +4427,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 144.78 104.14 0)
+			(at 132.08 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4436,7 +4436,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4445,7 +4445,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4454,7 +4454,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4463,7 +4463,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4472,7 +4472,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4481,7 +4481,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4490,7 +4490,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4499,7 +4499,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4508,7 +4508,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4517,7 +4517,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4526,7 +4526,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4535,7 +4535,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4544,7 +4544,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4553,7 +4553,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4562,7 +4562,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4571,7 +4571,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4580,7 +4580,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4589,7 +4589,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4598,7 +4598,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4607,7 +4607,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4616,7 +4616,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4625,7 +4625,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4634,7 +4634,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4643,7 +4643,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4652,7 +4652,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4661,7 +4661,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4670,7 +4670,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4679,7 +4679,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 144.78 104.14 90)
+			(at 132.08 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4701,7 +4701,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 144.78 111.76 0)
+		(at 132.08 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4710,7 +4710,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e5fb17b-bb78-4ea3-ab9f-b228a14431ec")
 		(property "Reference" "R5"
-			(at 147.32 110.4899 0)
+			(at 134.62 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,7 +4719,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 147.32 113.0299 0)
+			(at 134.62 113.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4728,7 +4728,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 143.002 111.76 90)
+			(at 130.302 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4737,7 +4737,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4746,7 +4746,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4755,7 +4755,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4764,7 +4764,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4773,7 +4773,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4782,7 +4782,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4791,7 +4791,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4800,7 +4800,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4809,7 +4809,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4818,7 +4818,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4827,7 +4827,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4836,7 +4836,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4845,7 +4845,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4854,7 +4854,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4863,7 +4863,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4872,7 +4872,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4881,7 +4881,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4890,7 +4890,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4899,7 +4899,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4908,7 +4908,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4917,7 +4917,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4926,7 +4926,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4935,7 +4935,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4944,7 +4944,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4953,7 +4953,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4962,7 +4962,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4971,7 +4971,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4980,7 +4980,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4989,7 +4989,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4998,7 +4998,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/delta-electronics-cyntec/PFR02S-152-FNH/9761599"
-			(at 144.78 111.76 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5023,7 +5023,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 51.435 104.14 270)
+		(at 65.405 102.235 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5032,7 +5032,7 @@
 		(fields_autoplaced yes)
 		(uuid "6900bc26-096d-494c-9439-56f0a3b45524")
 		(property "Reference" "TP2"
-			(at 56.515 102.8699 90)
+			(at 70.485 100.9649 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5041,7 +5041,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 56.515 105.4099 90)
+			(at 70.485 103.5049 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5050,7 +5050,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 51.435 109.22 0)
+			(at 65.405 107.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5059,7 +5059,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 51.435 109.22 0)
+			(at 65.405 107.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5068,7 +5068,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 51.435 104.14 0)
+			(at 65.405 102.235 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5077,7 +5077,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5086,7 +5086,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5095,7 +5095,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5104,7 +5104,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5113,7 +5113,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5122,7 +5122,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5131,7 +5131,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5140,7 +5140,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5149,7 +5149,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5158,7 +5158,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5167,7 +5167,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5176,7 +5176,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5185,7 +5185,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5194,7 +5194,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5203,7 +5203,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5212,7 +5212,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5221,7 +5221,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5230,7 +5230,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5239,7 +5239,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5248,7 +5248,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5257,7 +5257,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5266,7 +5266,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5275,7 +5275,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5284,7 +5284,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5293,7 +5293,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5302,7 +5302,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5311,7 +5311,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5320,7 +5320,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 51.435 104.14 90)
+			(at 65.405 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5342,7 +5342,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 144.78 119.38 0)
+		(at 132.08 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5351,7 +5351,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e3f1952-2eeb-43c8-a6a9-7f3db67213ad")
 		(property "Reference" "#PWR06"
-			(at 144.78 125.73 0)
+			(at 132.08 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5360,7 +5360,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 123.825 0)
+			(at 132.08 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5368,7 +5368,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 119.38 0)
+			(at 132.08 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5377,7 +5377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 119.38 0)
+			(at 132.08 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5386,7 +5386,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 119.38 0)
+			(at 132.08 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5408,7 +5408,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 224.155 103.505 90)
+		(at 193.04 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5416,7 +5416,7 @@
 		(dnp no)
 		(uuid "6e66c52e-2544-4c88-a355-c53b2c7e9bc6")
 		(property "Reference" "R8"
-			(at 224.155 98.298 90)
+			(at 193.04 97.663 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5424,7 +5424,7 @@
 			)
 		)
 		(property "Value" "200r"
-			(at 224.155 100.838 90)
+			(at 193.04 100.203 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5432,7 +5432,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 224.155 105.283 90)
+			(at 193.04 104.648 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5441,7 +5441,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 224.155 103.505 0)
+			(at 193.04 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5450,7 +5450,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 224.155 103.505 0)
+			(at 193.04 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5459,7 +5459,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5468,7 +5468,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5477,7 +5477,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5486,7 +5486,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5495,7 +5495,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5504,7 +5504,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5513,7 +5513,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5522,7 +5522,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5531,7 +5531,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5540,7 +5540,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5549,7 +5549,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5558,7 +5558,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5567,7 +5567,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5576,7 +5576,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5585,7 +5585,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5594,7 +5594,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5603,7 +5603,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5612,7 +5612,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5621,7 +5621,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5630,7 +5630,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5639,7 +5639,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5648,7 +5648,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5657,7 +5657,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5666,7 +5666,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5675,7 +5675,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5684,7 +5684,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5693,7 +5693,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5702,7 +5702,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0100FR-07200RL/2254275"
-			(at 224.155 103.505 90)
+			(at 193.04 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5727,7 +5727,7 @@
 	)
 	(symbol
 		(lib_id "library:dual_phototransistor")
-		(at 45.72 88.9 0)
+		(at 59.69 86.995 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5736,7 +5736,7 @@
 		(fields_autoplaced yes)
 		(uuid "975f208f-a956-490d-81fe-b8210bdcfb32")
 		(property "Reference" "Q1"
-			(at 55.88 88.8999 0)
+			(at 69.85 86.9949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5745,7 +5745,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 55.88 91.4399 0)
+			(at 69.85 89.5349 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5754,7 +5754,7 @@
 			)
 		)
 		(property "Footprint" "library:0603_sidemount"
-			(at 45.72 88.9 0)
+			(at 59.69 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5763,7 +5763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 88.9 0)
+			(at 59.69 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5772,7 +5772,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 88.9 0)
+			(at 59.69 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5781,7 +5781,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/harvatek-corporation/B19H1PT-H9C000214U1930/13574171"
-			(at 45.72 88.9 0)
+			(at 59.69 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5809,7 +5809,7 @@
 	)
 	(symbol
 		(lib_id "library:dual_phototransistor")
-		(at 151.765 86.36 0)
+		(at 139.065 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5818,7 +5818,7 @@
 		(fields_autoplaced yes)
 		(uuid "a116a104-fd3b-4684-ad06-238d677fd53f")
 		(property "Reference" "Q3"
-			(at 161.925 86.3599 0)
+			(at 149.225 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5827,7 +5827,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 161.925 88.8999 0)
+			(at 149.225 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5836,7 +5836,7 @@
 			)
 		)
 		(property "Footprint" "library:0603_sidemount"
-			(at 151.765 86.36 0)
+			(at 139.065 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5845,7 +5845,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.765 86.36 0)
+			(at 139.065 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5854,7 +5854,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 151.765 86.36 0)
+			(at 139.065 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5863,7 +5863,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/harvatek-corporation/B19H1PT-H9C000214U1930/13574171"
-			(at 151.765 86.36 0)
+			(at 139.065 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5891,7 +5891,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 158.75 119.38 0)
+		(at 146.05 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5900,7 +5900,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7413de5-bf8d-4587-820d-177e20b42b39")
 		(property "Reference" "#PWR07"
-			(at 158.75 125.73 0)
+			(at 146.05 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5909,7 +5909,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 158.75 123.825 0)
+			(at 146.05 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5917,7 +5917,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 119.38 0)
+			(at 146.05 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5926,7 +5926,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 119.38 0)
+			(at 146.05 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5935,7 +5935,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 119.38 0)
+			(at 146.05 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5957,7 +5957,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 51.435 119.38 0)
+		(at 65.405 117.475 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5966,7 +5966,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad2c29d3-2d5e-4e94-8abc-fd0a88307fb2")
 		(property "Reference" "#PWR02"
-			(at 51.435 125.73 0)
+			(at 65.405 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5975,7 +5975,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 51.435 123.825 0)
+			(at 65.405 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5983,7 +5983,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 51.435 119.38 0)
+			(at 65.405 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5992,7 +5992,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 51.435 119.38 0)
+			(at 65.405 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6001,7 +6001,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 51.435 119.38 0)
+			(at 65.405 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6345,7 +6345,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 212.725 113.03 180)
+		(at 181.61 112.395 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6353,7 +6353,7 @@
 		(dnp no)
 		(uuid "b192fe47-2016-4a82-b926-058a757f8490")
 		(property "Reference" "D3"
-			(at 213.233 107.823 0)
+			(at 182.118 107.188 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6361,7 +6361,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 213.233 110.363 0)
+			(at 182.118 109.728 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6369,7 +6369,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6378,7 +6378,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6387,7 +6387,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6396,7 +6396,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6405,7 +6405,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6414,7 +6414,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6423,7 +6423,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6432,7 +6432,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6441,7 +6441,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6450,7 +6450,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6459,7 +6459,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6468,7 +6468,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6477,7 +6477,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6486,7 +6486,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6495,7 +6495,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6504,7 +6504,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6513,7 +6513,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6522,7 +6522,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6531,7 +6531,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6540,7 +6540,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6549,7 +6549,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6558,7 +6558,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6567,7 +6567,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6576,7 +6576,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6585,7 +6585,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6594,7 +6594,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6603,7 +6603,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6612,7 +6612,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6621,7 +6621,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6630,7 +6630,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6639,7 +6639,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 212.725 113.03 0)
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6647,8 +6647,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.inolux-corp.com/datasheet/IR/Emitter/940%20nm%20SMD/IN-S42CTQHIR_V1.0.pdf"
-			(at 212.725 113.03 0)
+		(property "Digikey" "https://www.digikey.com/en/products/detail/inolux/IN-S42CTQHIR/10384741"
+			(at 181.61 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6995,7 +6995,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 212.725 93.98 180)
+		(at 181.61 93.345 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7003,7 +7003,7 @@
 		(dnp no)
 		(uuid "cc1019f8-d3d6-4335-99ed-27e2f9b0282b")
 		(property "Reference" "D1"
-			(at 213.233 88.773 0)
+			(at 182.118 88.138 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7011,7 +7011,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 213.233 91.313 0)
+			(at 182.118 90.678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7019,7 +7019,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7028,7 +7028,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7037,7 +7037,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7046,7 +7046,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7055,7 +7055,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7064,7 +7064,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7073,7 +7073,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7082,7 +7082,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7091,7 +7091,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7100,7 +7100,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7109,7 +7109,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7118,7 +7118,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7127,7 +7127,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7136,7 +7136,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7145,7 +7145,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7154,7 +7154,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7163,7 +7163,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7172,7 +7172,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7181,7 +7181,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7190,7 +7190,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7199,7 +7199,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7208,7 +7208,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7217,7 +7217,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7226,7 +7226,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7235,7 +7235,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7244,7 +7244,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7253,7 +7253,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7262,7 +7262,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7271,7 +7271,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7280,7 +7280,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7289,7 +7289,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 212.725 93.98 0)
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7297,8 +7297,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.inolux-corp.com/datasheet/IR/Emitter/940%20nm%20SMD/IN-S42CTQHIR_V1.0.pdf"
-			(at 212.725 93.98 0)
+		(property "Digikey" "https://www.digikey.com/en/products/detail/inolux/IN-S42CTQHIR/10384741"
+			(at 181.61 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7389,7 +7389,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 51.435 111.76 0)
+		(at 65.405 109.855 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7398,7 +7398,7 @@
 		(fields_autoplaced yes)
 		(uuid "dcfcf3eb-ada1-49a1-80a8-51605c2a0558")
 		(property "Reference" "R2"
-			(at 53.975 110.4899 0)
+			(at 67.945 108.5849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7407,7 +7407,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 53.975 113.0299 0)
+			(at 67.945 111.1249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7416,7 +7416,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 49.657 111.76 90)
+			(at 63.627 109.855 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7425,7 +7425,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7434,7 +7434,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7443,7 +7443,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7452,7 +7452,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7461,7 +7461,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7470,7 +7470,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7479,7 +7479,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7488,7 +7488,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7497,7 +7497,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7506,7 +7506,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7515,7 +7515,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7524,7 +7524,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7533,7 +7533,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7542,7 +7542,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7551,7 +7551,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7560,7 +7560,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7569,7 +7569,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7578,7 +7578,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7587,7 +7587,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7596,7 +7596,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7605,7 +7605,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7614,7 +7614,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7623,7 +7623,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7632,7 +7632,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7641,7 +7641,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7650,7 +7650,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7659,7 +7659,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7668,7 +7668,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7677,7 +7677,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7686,7 +7686,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/delta-electronics-cyntec/PFR02S-152-FNH/9761599"
-			(at 51.435 111.76 0)
+			(at 65.405 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7711,7 +7711,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 224.155 93.98 90)
+		(at 193.04 93.345 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7719,7 +7719,7 @@
 		(dnp no)
 		(uuid "df1bc29f-2749-4a39-b704-c4ddf699cbeb")
 		(property "Reference" "R7"
-			(at 224.155 88.773 90)
+			(at 193.04 88.138 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7727,7 +7727,7 @@
 			)
 		)
 		(property "Value" "200r"
-			(at 224.155 91.313 90)
+			(at 193.04 90.678 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7735,7 +7735,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 224.155 95.758 90)
+			(at 193.04 95.123 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7744,7 +7744,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 224.155 93.98 0)
+			(at 193.04 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7753,7 +7753,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 224.155 93.98 0)
+			(at 193.04 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7762,7 +7762,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7771,7 +7771,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7780,7 +7780,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7789,7 +7789,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7798,7 +7798,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7807,7 +7807,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7816,7 +7816,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7825,7 +7825,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7834,7 +7834,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7843,7 +7843,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7852,7 +7852,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7861,7 +7861,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7870,7 +7870,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7879,7 +7879,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7888,7 +7888,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7897,7 +7897,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7906,7 +7906,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7915,7 +7915,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7924,7 +7924,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7933,7 +7933,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7942,7 +7942,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7951,7 +7951,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7960,7 +7960,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7969,7 +7969,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7978,7 +7978,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7987,7 +7987,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7996,7 +7996,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8005,7 +8005,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0100FR-07200RL/2254275"
-			(at 224.155 93.98 90)
+			(at 193.04 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8030,7 +8030,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 40.005 119.38 0)
+		(at 53.975 117.475 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8039,7 +8039,7 @@
 		(fields_autoplaced yes)
 		(uuid "e1dbc835-8142-41e4-a131-4911112a703c")
 		(property "Reference" "#PWR03"
-			(at 40.005 125.73 0)
+			(at 53.975 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8048,7 +8048,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.005 123.825 0)
+			(at 53.975 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8056,7 +8056,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.005 119.38 0)
+			(at 53.975 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8065,7 +8065,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.005 119.38 0)
+			(at 53.975 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8074,7 +8074,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.005 119.38 0)
+			(at 53.975 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8096,7 +8096,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 158.75 111.76 0)
+		(at 146.05 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8105,7 +8105,7 @@
 		(fields_autoplaced yes)
 		(uuid "e61c800d-e549-4c79-8803-a1c82a7a687d")
 		(property "Reference" "R6"
-			(at 161.29 110.4899 0)
+			(at 148.59 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8114,7 +8114,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 161.29 113.0299 0)
+			(at 148.59 113.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8123,7 +8123,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 156.972 111.76 90)
+			(at 144.272 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8132,7 +8132,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8141,7 +8141,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8150,7 +8150,7 @@
 			)
 		)
 		(property "Attrition Qty" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8159,7 +8159,7 @@
 			)
 		)
 		(property "Capacitance" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8168,7 +8168,7 @@
 			)
 		)
 		(property "Category" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8177,7 +8177,7 @@
 			)
 		)
 		(property "Class" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8186,7 +8186,7 @@
 			)
 		)
 		(property "DC Resistance (DCR)" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8195,7 +8195,7 @@
 			)
 		)
 		(property "Frequency - Self Resonant" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8204,7 +8204,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8213,7 +8213,7 @@
 			)
 		)
 		(property "Inductance" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8222,7 +8222,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8231,7 +8231,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8240,7 +8240,7 @@
 			)
 		)
 		(property "Minimum Qty" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8249,7 +8249,7 @@
 			)
 		)
 		(property "Operating Temperature Range" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8258,7 +8258,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8267,7 +8267,7 @@
 			)
 		)
 		(property "Part" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8276,7 +8276,7 @@
 			)
 		)
 		(property "Power(Watts)" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8285,7 +8285,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8294,7 +8294,7 @@
 			)
 		)
 		(property "Process" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8303,7 +8303,7 @@
 			)
 		)
 		(property "Q @ Freq" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8312,7 +8312,7 @@
 			)
 		)
 		(property "Rated Current" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8321,7 +8321,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8330,7 +8330,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8339,7 +8339,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8348,7 +8348,7 @@
 			)
 		)
 		(property "Stock" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8357,7 +8357,7 @@
 			)
 		)
 		(property "Temperature Coefficient" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8366,7 +8366,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8375,7 +8375,7 @@
 			)
 		)
 		(property "Type" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8384,7 +8384,7 @@
 			)
 		)
 		(property "Voltage Rated" ""
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8393,7 +8393,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.com/en/products/detail/delta-electronics-cyntec/PFR02S-152-FNH/9761599"
-			(at 158.75 111.76 0)
+			(at 146.05 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8418,7 +8418,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 231.775 103.505 90)
+		(at 200.66 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8427,7 +8427,7 @@
 		(fields_autoplaced yes)
 		(uuid "eda280be-6df5-4f18-bc6b-ceda9ecc14ca")
 		(property "Reference" "#PWR01"
-			(at 238.125 103.505 0)
+			(at 207.01 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8436,7 +8436,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 235.585 103.5049 90)
+			(at 204.47 102.8699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8445,7 +8445,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 231.775 103.505 0)
+			(at 200.66 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8454,7 +8454,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.775 103.505 0)
+			(at 200.66 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8463,7 +8463,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 231.775 103.505 0)
+			(at 200.66 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8485,7 +8485,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 141.605 154.94 90)
+		(at 130.81 142.875 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8494,7 +8494,7 @@
 		(fields_autoplaced yes)
 		(uuid "f2b16e0b-b0ca-4b85-b895-5b3f204ccd15")
 		(property "Reference" "#PWR08"
-			(at 147.955 154.94 0)
+			(at 137.16 142.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8503,7 +8503,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 154.9399 90)
+			(at 133.985 142.8749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8512,7 +8512,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 141.605 154.94 0)
+			(at 130.81 142.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8521,7 +8521,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 141.605 154.94 0)
+			(at 130.81 142.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8530,7 +8530,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 141.605 154.94 0)
+			(at 130.81 142.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
