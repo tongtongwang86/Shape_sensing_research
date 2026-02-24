@@ -1,4 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "MAX11617EWE")(type "KiCad")(uri "${KIPRJMOD}/2026-02-20_22-12-45.kicad_sym")(options "")(descr ""))
+  (lib (name "library")(type "KiCad")(uri "${KIPRJMOD}/library.kicad_sym")(options "")(descr ""))
 )
