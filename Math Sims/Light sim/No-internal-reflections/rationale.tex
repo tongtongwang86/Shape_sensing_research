@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\section*{Simplified 6-DoF Optical Sensor Mathematical Model}
+
+\subsection*{1. Model Assumptions}
+To reduce the opto-mechanical system to a purely geometric and radiometric model, the following assumptions are made:
+\begin{enumerate}
+    \item \textbf{Perfect Absorption:} The internal cavity walls are perfectly matte black; stray light, reflections, and multi-path scattering are negligible.
+    \item \textbf{Point Source Emitters:} The LEDs act as ideal point sources with a modified Lambertian emission profile.
+    \item \textbf{Planar Apertures:} The slits above the phototransistors act as infinitesimally small planar apertures with area $A$, meaning irradiance is uniform across the slit.
+    \item \textbf{Straight-Line Propagation:} Light travels through the air gap without refraction, diffraction, or atmospheric attenuation.
+\end{enumerate}
+
+\subsection*{2. Geometry and Coordinate Frames}
+Let the static bottom plate define the global reference frame with its origin at the center. 
+
+The positions of the $i$-th LED, where $i \in \{1, 2, 3\}$, are defined by their radial distance $r_L$ and angular placement $\theta_i$:
+\begin{equation}
+    \mathbf{p}_{L,i} = \begin{bmatrix} r_L \cos\theta_i \\ r_L \sin\theta_i \\ 0 \end{bmatrix}, \quad \mathbf{\hat{n}}_{L,i} = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
+\end{equation}
+where $\mathbf{\hat{n}}_{L,i}$ represents the static normal vector of the LED emitting surface.
+
+The nominal positions of the $j$-th slit (where $j \in \{1, 2\}$) on the top plate, separated by a nominal gap distance $z_0$, at radial distance $r_S$ and angles $\gamma_j$, are:
+\begin{equation}
+    \mathbf{p}_{S,j} = \begin{bmatrix} r_S \cos\gamma_j \\ r_S \sin\gamma_j \\ z_0 \end{bmatrix}, \quad \mathbf{\hat{n}}_{S,j} = \begin{bmatrix} 0 \\ 0 \\ -1 \end{bmatrix}
+\end{equation}
+
+\subsection*{3. 6-DoF Kinematic Transformation}
+The top plate undergoes a rigid-body transformation described by a translation vector $\mathbf{t} = [t_x, t_y, t_z]^T$ and a rotation matrix $\mathbf{R} \in SO(3)$ representing roll, pitch, and yaw. 
+
+Applying this transformation relative to the nominal center of the top plate yields the displaced slit positions $\mathbf{p}'_{S,j}$ and displaced normal vectors $\mathbf{\hat{n}}'_{S,j}$:
+\begin{align}
+    \mathbf{p}'_{S,j} &= \mathbf{R} \left( \mathbf{p}_{S,j} - \begin{bmatrix} 0 \\ 0 \\ z_0 \end{bmatrix} \right) + \begin{bmatrix} 0 \\ 0 \\ z_0 \end{bmatrix} + \mathbf{t} \\
+    \mathbf{\hat{n}}'_{S,j} &= \mathbf{R} \, \mathbf{\hat{n}}_{S,j}
+\end{align}
+
+\subsection*{4. Radiometric Light Propagation}
+For a given LED $i$ and slit $j$, the displacement vector $\mathbf{v}_{i,j}$ from the LED to the slit is:
+\begin{equation}
+    \mathbf{v}_{i,j} = \mathbf{p}'_{S,j} - \mathbf{p}_{L,i}
+\end{equation}
+The Euclidean distance $d_{i,j} = \|\mathbf{v}_{i,j}\|$ and the normalized directional vector $\mathbf{\hat{v}}_{i,j} = \mathbf{v}_{i,j} / d_{i,j}$ dictate the optical geometry.
+
+The emission angle $\theta_{emit}$ (relative to the LED normal) and the angle of incidence $\phi_{inc}$ (relative to the slit normal) are determined via the dot product:
+\begin{align}
+    \cos(\theta_{emit}) &= \mathbf{\hat{n}}_{L,i} \cdot \mathbf{\hat{v}}_{i,j} \\
+    \cos(\phi_{inc}) &= \mathbf{\hat{n}}'_{S,j} \cdot (-\mathbf{\hat{v}}_{i,j})
+\end{align}
+
+The luminous intensity $I(\theta_{emit})$ follows a modified Lambertian profile dictated by the LED's viewing half-angle $\theta_{half}$:
+\begin{equation}
+    I(\theta_{emit}) = I_0 \cos^m(\theta_{emit}), \quad \text{where } m = \frac{-\ln(2)}{\ln(\cos\theta_{half})}
+\end{equation}
+where $I_0$ is the peak axial intensity.
+
+\subsection*{5. Total Irradiance and Transistor Power}
+Applying the inverse-square law and Lambert's cosine law, the irradiance $E_{i,j}$ arriving at slit $j$ from LED $i$ is:
+\begin{equation}
+    E_{i,j} = 
+    \begin{cases} 
+      \frac{I_0 \cos^m(\theta_{emit})}{d_{i,j}^2} \cos(\phi_{inc}) & \text{if } \cos(\theta_{emit}) > 0 \text{ and } \cos(\phi_{inc}) > 0 \\
+      0 & \text{otherwise}
+    \end{cases}
+\end{equation}
+
+By the principle of superposition, the total radiant power $P_j$ entering the $j$-th phototransistor through a slit of area $A_j$ is the sum of the contributing irradiances from all three LEDs:
+\begin{equation}
+    P_j = A_j \sum_{i=1}^{3} E_{i,j}
+\end{equation}
+
+\end{document}
