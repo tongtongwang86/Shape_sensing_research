@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "library")(type "KiCad")(uri "${KIPRJMOD}/library.kicad_sym")(options "")(descr ""))
   (lib (name "AD7689")(type "KiCad")(uri "${KIPRJMOD}/AD7689.kicad_sym")(options "")(descr ""))
+  (lib (name "ADS1262IPWR")(type "KiCad")(uri "${KIPRJMOD}/ADS1262IPWR.kicad_sym")(options "")(descr ""))
+  (lib (name "FFC2B28-12-G")(type "KiCad")(uri "${KIPRJMOD}/FFC2B28-12-G.kicad_sym")(options "")(descr ""))
 )

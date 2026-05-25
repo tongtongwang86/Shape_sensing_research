@@ -1,4 +1,4 @@
-27031259888432460
+27036598647546735
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106267,6 +106267,13 @@ library
 6
 6
 library
+APDA3020P3C-P22
+
+
+0
+2
+2
+library
 APDS-9960
 
 
@@ -106491,6 +106498,13 @@ fuse
 2
 2
 library
+GCT_FFC2B28-12-G
+
+
+0
+14
+14
+library
 GateronHotswap
 
 
@@ -106665,6 +106679,13 @@ SOIC SO
 0
 8
 8
+library
+SOP65P640X120-28N
+
+
+0
+28
+28
 library
 SOT-23
 SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py
